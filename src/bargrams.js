@@ -34,7 +34,7 @@ fetch("datasets/sample.json")
 
 
                     let bin_button = document.createElement("button");
-                    bin_button.setAttribute("style", "width:100%;");
+                    bin_button.setAttribute("style", "width:100%;padding:0;git ");
 
                     bin_button.innerText = j.toString();
                     bargram_section_bottom.append(bin_button);
