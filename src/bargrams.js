@@ -51,7 +51,7 @@ fetch("datasets/sample.json")
                         console.log("inner loop reached");
                         if (this.entities[k].bin === j) {
                             let temp = document.createElement("img");
-                            temp.style.maxWidth = "20px";
+                            temp.style.maxWidth = "40px";
                             temp.setAttribute("id", "bargram" + this.id.toString() + "-entity" + (k + 1).toString());
                             temp.setAttribute("src", "datasets/car-computer-icons-clip-art-car-icon.jpg");
                             bargram_section_top.appendChild(temp);
@@ -74,16 +74,16 @@ fetch("datasets/sample.json")
             {id: 4, bin: 2}, {id: 5, bin: 2}, {id: 6, bin: 2}, {id: 7, bin: 2}, {id: 8, bin: 2}, {id: 9, bin: 2},
             {id: 10, bin: 2}, {id: 11, bin: 3}, {id: 12, bin: 3}, {id: 13, bin: 3}, {id: 14, bin: 3}, {id: 15, bin: 3},
             {id: 16, bin: 3}, {id: 17, bin: 3}, {id: 18, bin: 3}, {id: 19, bin: 4}, {id: 20, bin: 4}]);
-        //
-        // let bob = new Bargram(2, "cat", 20, [{id: 1, bin: 1}, {id: 2, bin: 2}, {id: 3, bin: 3},
-        //     {id: 4, bin: 4}, {id: 5, bin: 5}, {id: 6, bin: 6}, {id: 7, bin: 7}, {id: 8, bin: 8}, {id: 9, bin: 9},
-        //     {id: 10, bin: 10}, {id: 11, bin: 11}, {id: 12, bin: 12}, {id: 13, bin: 13}, {id: 14, bin: 14}, {id: 15, bin: 15},
-        //     {id: 16, bin: 16}, {id: 17, bin: 17}, {id: 18, bin: 18}, {id: 19, bin: 19}, {id: 20, bin: 20}]);
-        // let dave = new Bargram(3, "cat", 10, [{id: 1, bin: 1}, {id: 2, bin: 1}, {id: 3, bin: 2},
-        //     {id: 4, bin: 2}, {id: 5, bin: 3}, {id: 6, bin: 3}, {id: 7, bin: 4}, {id: 8, bin: 4}, {id: 9, bin: 5},
-        //     {id: 10, bin: 5}, {id: 11, bin: 6}, {id: 12, bin: 6}, {id: 13, bin: 7}, {id: 14, bin: 7}, {id: 15, bin: 8},
-        //     {id: 16, bin: 8}, {id: 17, bin: 9}, {id: 18, bin: 9}, {id: 19, bin: 10}, {id: 20, bin: 10}]);
+
+        let bob = new Bargram(2, "cat", 20, [{id: 1, bin: 1}, {id: 2, bin: 2}, {id: 3, bin: 3},
+            {id: 4, bin: 4}, {id: 5, bin: 5}, {id: 6, bin: 6}, {id: 7, bin: 7}, {id: 8, bin: 8}, {id: 9, bin: 9},
+            {id: 10, bin: 10}, {id: 11, bin: 11}, {id: 12, bin: 12}, {id: 13, bin: 13}, {id: 14, bin: 14}, {id: 15, bin: 15},
+            {id: 16, bin: 16}, {id: 17, bin: 17}, {id: 18, bin: 18}, {id: 19, bin: 19}, {id: 20, bin: 20}]);
+        let dave = new Bargram(3, "cat", 10, [{id: 1, bin: 1}, {id: 2, bin: 1}, {id: 3, bin: 2},
+            {id: 4, bin: 2}, {id: 5, bin: 3}, {id: 6, bin: 3}, {id: 7, bin: 4}, {id: 8, bin: 4}, {id: 9, bin: 5},
+            {id: 10, bin: 5}, {id: 11, bin: 6}, {id: 12, bin: 6}, {id: 13, bin: 7}, {id: 14, bin: 7}, {id: 15, bin: 8},
+            {id: 16, bin: 8}, {id: 17, bin: 9}, {id: 18, bin: 9}, {id: 19, bin: 10}, {id: 20, bin: 10}]);
         tim.display();
-        // bob.display();
-        // dave.display();
+        bob.display();
+        dave.display();
     });
