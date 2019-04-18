@@ -43,8 +43,7 @@ fetch("datasets/sample.json")
 
                     // generate entity icons
                     let bargram_section_top = document.createElement("div");
-                    bargram_section_top.setAttribute("style", "grid-row:1;grid-column:" + j.toString() +";");
-
+                    bargram_section_top.setAttribute("style", "grid-row:1;grid-column:" + j.toString() + ";");
 
 
                     for (let k = 0; k < this.entities.length; k++) {
@@ -52,6 +51,7 @@ fetch("datasets/sample.json")
                         if (this.entities[k].bin === j) {
                             let temp = document.createElement("img");
                             temp.style.maxWidth = "40px";
+                            temp.setAttribute("class", "entity" + this.entities[k].id);
                             temp.setAttribute("id", "bargram" + this.id.toString() + "-entity" + (k + 1).toString());
                             temp.setAttribute("src", "datasets/car-computer-icons-clip-art-car-icon.jpg");
                             bargram_section_top.appendChild(temp);
@@ -77,7 +77,10 @@ fetch("datasets/sample.json")
 
         let bob = new Bargram(2, "cat", 20, [{id: 1, bin: 1}, {id: 2, bin: 2}, {id: 3, bin: 3},
             {id: 4, bin: 4}, {id: 5, bin: 5}, {id: 6, bin: 6}, {id: 7, bin: 7}, {id: 8, bin: 8}, {id: 9, bin: 9},
-            {id: 10, bin: 10}, {id: 11, bin: 11}, {id: 12, bin: 12}, {id: 13, bin: 13}, {id: 14, bin: 14}, {id: 15, bin: 15},
+            {id: 10, bin: 10}, {id: 11, bin: 11}, {id: 12, bin: 12}, {id: 13, bin: 13}, {id: 14, bin: 14}, {
+                id: 15,
+                bin: 15
+            },
             {id: 16, bin: 16}, {id: 17, bin: 17}, {id: 18, bin: 18}, {id: 19, bin: 19}, {id: 20, bin: 20}]);
         let dave = new Bargram(3, "cat", 10, [{id: 1, bin: 1}, {id: 2, bin: 1}, {id: 3, bin: 2},
             {id: 4, bin: 2}, {id: 5, bin: 3}, {id: 6, bin: 3}, {id: 7, bin: 4}, {id: 8, bin: 4}, {id: 9, bin: 5},
@@ -86,4 +89,74 @@ fetch("datasets/sample.json")
         tim.display();
         bob.display();
         dave.display();
+
+        let entity_set = new Set();
+        let entity_status = {};
+
+        let icons = document.getElementsByTagName("img");
+        // build a set of entities and start with no borders
+        for (let i = 0; i < icons.length; i++) {
+            entity_set.add(icons[i].classList[0]);
+            icons[i].style.borderWidth = "2px";
+            icons[i].style.borderStyle = "solid";
+            icons[i].style.borderColor = "#ffffff00";
+
+        }
+
+        entity_set = Array.from(entity_set);
+        //init the status of all entities to false;
+        for (let j = 0; j < entity_set.length; j++) {
+            entity_status[entity_set[j]] = false;
+        }
+        console.log(entity_set);
+        console.log(entity_status);
+
+        let register_icon_listeners = () => {
+            for (let i = 0; i < icons.length; i++) {
+                // register an event listener for each icon
+                icons[i].addEventListener("click", (event) => {
+                    let clicked = event.target.classList[0];
+                    // toggle the status of the entity
+                    entity_status[clicked] = !entity_status[clicked];
+
+                    // loop through all entity icons in the entity set
+                    for (let j = 0; j < entity_set.length; j++) {
+                        let entity_icons = document.getElementsByClassName(entity_set[j]);
+                        for (let k = 0; k < entity_icons.length; k++) {
+                            // if the status is true set the border to red
+                            if (entity_status[entity_set[j]]) {
+                                entity_icons[k].style.borderWidth = "2px";
+                                entity_icons[k].style.borderStyle = "solid";
+                                entity_icons[k].style.borderColor = "red";
+                                // if there isn't an image in results for this entity create one
+                                // if(document.getElementById(entity_set[j]) === null){
+                                //
+                                //     let temp = document.createElement("img");
+                                //
+                                //     temp.id = entity_set[j];
+                                //     temp.setAttribute("src", entity_set[j] +".jpg");
+                                //     temp.setAttribute("width", "300px");
+                                //     console.log(temp);
+                                //     document.getElementById("results").appendChild(temp);
+                                // }
+                                // if the status is false
+                            } else {
+                                // make the border transparent
+                                entity_icons[k].style.borderWidth = "2px";
+                                entity_icons[k].style.borderStyle = "solid";
+                                entity_icons[k].style.borderColor = "#ffffff00";
+                                // remove the image if it exists
+                                // if(document.getElementById(entity_set[j]) !== null){
+                                //     document.getElementById(entity_set[j]).remove();
+                                // }
+
+                            }
+                        }
+                    }
+                });
+            }
+
+        };
+        register_icon_listeners();
+
     });
