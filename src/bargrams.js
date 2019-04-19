@@ -128,27 +128,27 @@ fetch("datasets/sample.json")
                                 entity_icons[k].style.borderWidth = "2px";
                                 entity_icons[k].style.borderStyle = "solid";
                                 entity_icons[k].style.borderColor = "red";
-                                // if there isn't an image in results for this entity create one
-                                // if(document.getElementById(entity_set[j]) === null){
-                                //
-                                //     let temp = document.createElement("img");
-                                //
-                                //     temp.id = entity_set[j];
-                                //     temp.setAttribute("src", entity_set[j] +".jpg");
-                                //     temp.setAttribute("width", "300px");
-                                //     console.log(temp);
-                                //     document.getElementById("results").appendChild(temp);
-                                // }
-                                // if the status is false
+                                //if there isn't an image in results for this entity create one
+                                if(document.getElementById(entity_set[j]) === null){
+
+                                    let temp = document.createElement("img");
+
+                                    temp.id = entity_set[j];
+                                    temp.setAttribute("src", "datasets/"+ entity_set[j] +".png");
+                                    temp.setAttribute("width", "30px");
+                                    console.log(temp);
+                                    document.getElementById("results").appendChild(temp);
+                                }
+                                //if the status is false
                             } else {
                                 // make the border transparent
                                 entity_icons[k].style.borderWidth = "2px";
                                 entity_icons[k].style.borderStyle = "solid";
                                 entity_icons[k].style.borderColor = "#ffffff00";
                                 // remove the image if it exists
-                                // if(document.getElementById(entity_set[j]) !== null){
-                                //     document.getElementById(entity_set[j]).remove();
-                                // }
+                                if(document.getElementById(entity_set[j]) !== null){
+                                    document.getElementById(entity_set[j]).remove();
+                                }
 
                             }
                         }
