@@ -1,0 +1,291 @@
+<RULES>
+space.label.text=Consumer Guide Car Data
+
+dimension.1.ID=Make
+dimension.1.text=Make
+
+#dimension.2.ID=Model
+#dimension.2.text=Model
+
+dimension.3.ID=Recommendation
+dimension.3.text=Recommendation
+
+dimension.4.ID=Class
+dimension.4.text=Vehicle Class
+
+dimension.5.ID=Base Price
+dimension.5.text=Base Price
+dimension.5.datatype=currency
+dimension.5.format=0
+dimension.5.unit.label.text=Dollars
+
+dimension.6.ID=Loaded Price
+dimension.6.text=Loaded Price
+dimension.6.datatype=currency
+dimension.6.unit.label.text=Dollars
+dimension.6.format=0
+
+dimension.7.ID=City Mileage
+dimension.7.datatype=integer
+dimension.7.text=City Fuel Efficiency
+dimension.7.unit.label.text=Miles/Gallon
+
+dimension.8.ID=HW Mileage
+dimension.8.datatype=integer
+dimension.8.text=HW Fuel Efficiency
+dimension.8.unit.label.text=Miles/Gallon
+
+dimension.9.ID=Horse Power
+dimension.9.text=Horse Power
+dimension.9.datatype=integer
+
+dimension.10.ID=Wheel Base
+dimension.10.text=Wheel Base
+dimension.10.unit.label.text=inches
+dimension.10.datatype=float
+
+dimension.11.ID=Length
+dimension.11.text=Length
+dimension.11.unit.label.text=inches
+dimension.11.datatype=float
+
+dimension.12.ID=Front Head Room
+dimension.12.text=Front Head Room
+dimension.12.datatype=float
+dimension.12.unit.label.text=inches
+
+dimension.13.ID=Front Leg Room
+dimension.13.text=Front Leg Room
+dimension.13.datatype=float
+dimension.13.unit.label.text=inches
+
+#dimension.14.ID=URL
+#dimension.14.value.url=14
+
+dimension.15.ID=Warranty (yrs)
+dimension.15.text=Warranty (yrs)
+dimension.15.unit.label.text=years
+
+dimension.16.ID=Warranty (miles)
+dimension.16.text=Warranty (miles)
+dimension.16.unit.label.text=miles
+
+item.label.text=2
+item.text=18
+item.image=cars/^17^.jpg
+item.detail.text=18
+item.url=14
+item.ID=19
+itemdesc.noun.singular=vehicle
+itemdesc.noun.plural=vehicles
+itemdesc.glyph.points=(1,8) (2,8) (2,9) (3,9) (3,8) (7,8) (7,9) (8,9) (8,8), (9,8) (9,7) (7,5) (3,5) (1,7)
+
+</RULES>
+
+<DATA>
+Make,Model,Consumer Guide Recommendation,CLASS,Low Price,High Price,City Miles/Gallon,Highway Miles/Gallon,Horse Power,Wheel Base,Length,Front Head Room,Front Leg Room,Manufacturer URL,Basic Warranty - Years,Basic Warranty - Miles,Image,Details,Car URL
+AM General,Hummer,,full-size sport-utility vehicle,69385,89410,13,17,195,130.0,184.5,,,,3,36000,99309001990101,AM General Hummer,299
+Acura,Integra,,sports coupe,19300,24350,25,31,170,101.2,172.4,38.6,42.7,http://www.acura.com/,4,50000,00801011990008,Acura Integra,4
+Acura,NSX,,sports and GT car,84000,88000,17,24,290,99.6,174.2,36.3,44.3,http://www.acura.com/,4,50000,00801041990003,Acura NSX,5
+Acura,RL,Best Buy,luxury car,42000,44000,19,24,210,114.6,196.6,38.8,42.1,http://www.acura.com/,4,50000,00801021990009,Acura RL,13
+Acura,TL,Best Buy,near-luxury car,28400,30400,19,29,225,108.1,192.9,39.9,42.4,http://www.acura.com/,4,50000,00801021990012,Acura TL,320
+Audi,A4,,near-luxury car,23990,37900,17,24,250,102.6,176.7,38.2,41.3,http://www.audi.com/,3,50000,00601051990001,Audi A4,10
+Audi,A6,Recommended,near-luxury car,33950,48900,17,24,250,108.6,192.0,39.3,41.3,http://www.audi.com/,3,50000,00601031990001,Audi A6,11
+Audi,A8,,luxury car,62000,62000,17,24,310,113.4,198.2,38.9,41.3,http://www.audi.com/,3,50000,00601071990001,Audi A8,7
+Audi,TT,,sports and GT car,30500,30500,22,31,180,95.4,159.1,37.8,41.2,http://www.audi.com/,3,50000,00601091990002,Audi TT,368
+BMW,3-Series,,near-luxury car,26990,33990,20,29,170,107.3,176.0,38.4,41.4,http://www.bmwusa.com/,4,50000,00602091990004,BMW 3-Series,60
+BMW,5-Series,Recommended,luxury car,38900,69400,15,23,282,111.4,188.0,38.7,41.7,http://www.bmwusa.com/,4,50000,00602061990002,BMW 5-Series,59
+BMW,7-Series,,luxury car,62400,92100,13,20,326,115.4,196.2,37.7,41.9,http://www.bmwusa.com/,4,50000,00602071990001,BMW 7-Series,2
+BMW,X5,,midsize sport-utility vehicle,49400,49400,13,17,282,111.0,183.7,39.8,39.3,http://www.bmwusa.com/,4,50000,00602991990001,BMW X5,354
+BMW,Z3 Series,Recommended,sports and GT car,31300,42700,19,26,193,96.3,158.5,36.7,41.8,http://www.bmwusa.com/,4,50000,00602131990001,BMW Z3 Series,57
+Buick,Century,Recommended,midsize car,19725,21860,20,30,175,109.0,194.6,39.4,42.4,http://www.buick.com/index.htm,3,36000,00121211990001,Buick Century,56
+Buick,LeSabre,Recommended,full-size car,23235,27525,19,30,205,112.2,200.0,38.8,42.4,http://www.buick.com/index.htm,3,36000,00121281990001,Buick LeSabre,353
+Buick,Park Avenue,Recommended,near-luxury car,31800,36800,18,27,240,113.8,206.8,39.8,42.4,http://www.buick.com/index.htm,3,36000,00121341990001,Buick Park Avenue,54
+Buick,Regal,,midsize car,22340,25185,18,27,240,109.0,196.2,39.3,42.4,http://www.buick.com/index.htm,3,36000,00121321990001,Buick Regal,207
+Cadillac,Catera,,near-luxury car,30860,30860,18,24,200,107.5,192.2,38.7,42.2,http://www.cadillac.com/index.html,4,50000,00122281990008,Cadillac Catera,71
+Cadillac,DeVille,Recommended,luxury car,39500,44700,17,28,275,115.3,207.0,39.1,43.2,http://www.cadillac.com/index.html,4,50000,00122261990018,Cadillac DeVille,379
+Cadillac,Eldorado,,luxury car,39120,42695,17,26,275,108.0,200.6,37.8,42.6,http://www.cadillac.com/index.html,4,50000,00122221990001,Cadillac Eldorado,38
+Cadillac,Escalade,,full-size sport-utility vehicle,46225,46225,13,16,255,117.5,201.2,39.9,41.7,http://www.cadillac.com/index.html,4,50000,00122001990005,Cadillac Escalade,337
+Cadillac,Seville,,luxury car,44080,46680,17,26,275,112.2,201.0,38.2,42.5,http://www.cadillac.com/index.html,4,50000,00122231990001,Cadillac Seville,275
+Chevrolet,Astro,,minivan,20240,23887,16,20,190,111.2,189.8,39.2,41.6,http://www.chevrolet.com/,3,36000,00124991990002,Chevrolet Astro,36
+Chevrolet,Blazer,,midsize sport-utility vehicle,18970,31570,17,23,190,100.5,176.8,39.6,42.4,http://www.chevrolet.com/,3,36000,00124191990005,Chevrolet Blazer,35
+Chevrolet,C/K 2500/3500,,full-size pickup truck,19497,27979,19,27,195,131.5,213.1,39.9,41.7,http://www.chevrolet.com/,3,36000,00124991990017,Chevrolet C/K 2500/3500,136
+Chevrolet,Camaro,Budget Buy,sports and GT car,16940,28615,18,27,320,101.1,193.5,37.2,43.0,http://www.chevrolet.com/,3,36000,00123991990006,Chevrolet Camaro,74
+Chevrolet,Cavalier,Recommended,subcompact car,13160,19830,23,33,150,104.1,180.9,37.6,41.9,http://www.chevrolet.com/,3,36000,00123991990008,Chevrolet Cavalier,72
+Chevrolet,Corvette,Best Buy,sports and GT car,38555,45555,18,28,345,104.5,179.7,37.6,42.7,http://www.chevrolet.com/,3,36000,00123991990005,Chevrolet Corvette,316
+Chevrolet,Express,Recommended,full-size van,20460,27004,14,17,220,135.0,218.7,40.6,41.1,http://www.chevrolet.com/,3,36000,00124991990019,Chevrolet Express,334
+Chevrolet,Impala,Budget Buy,midsize car,18790,22590,20,29,200,110.5,200.0,39.2,42.2,http://www.chevrolet.com/,3,36000,00123201990001,Chevrolet Impala,363
+Chevrolet,Lumina,,midsize car,18790,18790,20,29,175,107.5,200.9,38.4,42.4,http://www.chevrolet.com/,3,36000,00123991990011,Chevrolet Lumina,83
+Chevrolet,Malibu,Recommended,midsize car,16445,19215,20,30,170,107.0,190.4,39.4,41.9,http://www.chevrolet.com/,3,36000,00123991990014,Chevrolet Malibu,140
+Chevrolet,Metro,,subcompact car,9185,10610,39,43,79,93.1,149.4,39.1,42.5,http://www.chevrolet.com/,3,36000,00123991990015,Chevrolet Metro,30
+Chevrolet,Monte Carlo,,sports coupe,19290,21735,19,29,200,110.5,197.9,38.1,42.4,http://www.chevrolet.com/,3,36000,00123261990001,Chevrolet Monte Carlo,360
+Chevrolet,Prizm,Recommended,subcompact car,13910,15960,31,37,125,97.1,174.2,39.3,42.5,http://www.chevrolet.com/,3,36000,00123991990001,Chevrolet Prizm,274
+Chevrolet,S-10,Recommended,compact pickup truck,12605,20081,17,23,180,108.3,190.1,39.5,42.4,http://www.chevrolet.com/,3,36000,00124991990006,Chevrolet S-10,82
+Chevrolet,Silverado 1500,Best Buy,full-size pickup truck,15655,31720,16,20,285,119.0,203.3,41.0,41.3,http://www.chevrolet.com/,3,36000,00124991990009,Chevrolet Silverado 1500,305
+Chevrolet,Silverado 2500,Best Buy,full-size pickup truck,20489,33135,16,20,285,133.0,222.0,41.0,41.3,http://www.chevrolet.com/,3,36000,00124991990008,Chevrolet Silverado 2500,346
+Chevrolet,Tahoe Limited and Z71,,full-size sport-utility vehicle,33929,38894,14,18,255,117.5,199.6,43.3,41.7,http://www.chevrolet.com/,3,36000,00124151990028,Chevrolet Tahoe Limited and Z71,391
+Chevrolet,Tahoe and Suburban,,full-size sport-utility vehicle,24929,30595,19,27,275,116.0,198.9,40.7,41.3,http://www.chevrolet.com/,3,36000,00124151990008,Chevrolet Tahoe and Suburban,80
+Chevrolet,Tracker,,compact sport-utility vehicle,13925,16250,23,25,127,86.6,151.8,40.9,41.4,http://www.chevrolet.com/,3,36000,00124991990013,Chevrolet Tracker,312
+Chevrolet,Venture,Recommended,minivan,20650,28995,18,25,185,112.0,186.9,39.9,39.9,http://www.chevrolet.com/,3,36000,00124991990015,Chevrolet Venture,79
+Chrysler,Cirrus,,midsize car,16230,20085,19,27,168,108.0,187.0,38.1,42.3,http://www.chryslercorp.com/,3,36000,97101271990201,Chrysler Cirrus,77
+Chrysler,Concorde,Best Buy,full-size car,22145,26385,19,29,225,113.0,209.1,38.3,42.2,http://www.chryslercorp.com/,3,36000,00101991990003,Chrysler Concorde,276
+Chrysler,LHS and 300M,,near-luxury car,28240,29085,18,27,253,113.0,197.8,38.3,42.2,http://www.chryslercorp.com/,3,36000,00101991990005,Chrysler LHS and 300M,301
+Chrysler,Sebring,Recommended,sports coupe,19840,26710,19,27,163,103.7,190.9,37.6,43.3,http://www.chryslercorp.com/,3,36000,00101991990006,Chrysler Sebring,267
+Chrysler,Town & Country,,minivan,26525,36805,17,24,180,119.3,199.7,39.8,40.6,http://www.chryslercorp.com/,3,36000,00101991990009,Chrysler Town & Country,24
+Chrysler,Voyager,Best Buy,minivan,18850,24245,18,24,158,113.3,186.3,39.8,40.6,http://www.chryslercorp.com/,3,36000,98108231990107,Chrysler Voyager,132
+Daewoo,Lanos,,subcompact car,8669,12519,26,36,105,99.2,160.4,38.9,42.8,,3,36000,00813021990001,Daewoo Lanos,340
+Dodge,Avenger,,sports coupe,19045,21290,19,27,163,103.7,190.2,39.1,43.3,http://www.4adodge.com/,3,36000,00103991990001,Dodge Avenger,23
+Dodge,Caravan,Best Buy,minivan,18850,32175,17,24,180,113.3,186.3,39.8,40.6,http://www.4adodge.com/,3,36000,00103991990002,Dodge Caravan,22
+Dodge,Dakota,Best Buy,compact pickup truck,13555,21895,12,17,250,111.9,195.8,40.0,41.9,http://www.4adodge.com/,3,36000,00104091990007,Dodge Dakota,21
+Dodge,Durango,Recommended,midsize sport-utility vehicle,26170,28170,12,17,245,115.9,193.3,39.8,41.9,http://www.4adodge.com/,3,36000,00104991990004,Dodge Durango,243
+Dodge,Intrepid,Best Buy,full-size car,20545,24435,18,26,242,113.0,203.7,38.3,42.2,http://www.4adodge.com/,3,36000,00103991990003,Dodge Intrepid,273
+Dodge,Ram 1500,Recommended,full-size pickup truck,14895,23850,13,17,245,119.0,204.1,40.2,41.0,http://www.4adodge.com/,3,36000,00104991990005,Dodge Ram 1500,141
+Dodge,Ram 2500/3500,Recommended,full-size pickup truck,20240,28010,19,27,230,134.7,224.1,40.2,41.0,http://www.4adodge.com/,3,36000,00104991990007,Dodge Ram 2500/3500,142
+Dodge,Ram Van/Wagon,,full-size van,18430,26235,12,18,245,109.6,187.2,40.5,39.0,http://www.4adodge.com/,3,36000,00104991990008,Dodge Ram Van/Wagon,239
+Dodge,Stratus,,midsize car,16080,19980,19,27,168,108.0,186.0,38.1,42.3,http://www.4adodge.com/,3,36000,00103441990001,Dodge Stratus,18
+Dodge,Viper,,sports and GT car,67225,69725,12,21,450,96.2,176.2,,42.6,http://www.4adodge.com/,3,36000,98103411990307,Dodge Viper,17
+Dodge/Plymouth,Neon,Recommended,subcompact car,12490,12490,29,39,132,105.0,174.4,39.1,42.4,,3,36000,00108991990001,Dodge/Plymouth Neon,19
+Ford,Contour,,compact car,16845,22715,20,28,170,106.5,184.6,39.0,42.4,http://www.fordvehicles.com/,3,36000,00113321990001,Ford Contour,68
+Ford,Crown Victoria,Budget Buy,full-size car,22005,24120,17,24,200,114.7,212.0,39.4,42.5,http://www.fordvehicles.com/,3,36000,00113351990003,Ford Crown Victoria,67
+Ford,Econoline Wagon/Van,Best Buy,full-size van,20285,28870,13,17,235,138.0,211.9,42.5,40.0,http://www.fordvehicles.com/,3,36000,99114001990001,Ford Econoline Wagon/Van,241
+Ford,Escort/ZX2,Budget Buy,subcompact car,11505,11760,25,33,130,98.4,174.5,39.0,42.5,http://www.fordvehicles.com/,3,36000,00113001990001,Ford Escort/ZX2,283
+Ford,Excursion,,full-size sport-utility vehicle,33460,40205,15,18,235,137.0,226.7,41.0,42.3,http://www.fordvehicles.com/,3,36000,00114051990002,Ford Excursion,370
+Ford,Expedition,Best Buy,full-size sport-utility vehicle,29655,39695,13,18,240,119.1,204.6,39.8,40.9,http://www.fordvehicles.com/,3,36000,00114051990006,Ford Expedition,65
+Ford,Explorer,Best Buy,midsize sport-utility vehicle,21675,34375,14,19,215,101.7,180.8,39.4,42.4,http://www.fordvehicles.com/,3,36000,00114071990001,Ford Explorer,64
+Ford,F-150,Best Buy,full-size pickup truck,15285,31125,13,17,260,119.9,205.6,40.8,40.9,http://www.fordvehicles.com/,3,36000,00114051990009,Ford F-150,222
+Ford,F-250/350 Super Duty,Best Buy,full-size pickup truck,19910,33185,19,27,235,137.0,222.2,41.3,40.7,http://www.fordvehicles.com/,3,36000,00114051990011,Ford F-250/350 Super Duty,223
+Ford,Focus,,subcompact car,11865,15380,25,34,130,103.0,168.1,39.3,43.1,http://www.fordvehicles.com/,3,36000,00113311990018,Ford Focus,364
+Ford,Mustang,Budget Buy,sports and GT car,16520,31605,17,24,260,101.3,183.2,38.1,42.6,http://www.fordvehicles.com/,3,36000,00113221990001,Ford Mustang,63
+Ford,Ranger,Best Buy,compact pickup truck,11485,19690,17,22,160,111.6,187.5,39.2,42.2,http://www.fordvehicles.com/,3,36000,00114071990003,Ford Ranger,61
+Ford,Taurus,,midsize car,17695,20895,19,28,155,108.5,197.6,39.3,42.2,http://www.fordvehicles.com/,3,36000,00113331990004,Ford Taurus,377
+Ford,Windstar,Recommended,minivan,19815,30515,17,23,150,120.7,200.9,39.3,40.7,http://www.fordvehicles.com/,3,36000,00114101990001,Ford Windstar,32
+GMC,Jimmy/Envoy,,midsize sport-utility vehicle,19070,34270,17,23,190,100.5,177.3,39.6,42.4,http://www.gm.com/cgi-bin/product/division.cgi?gmc,3,36000,00126991990002,GMC Jimmy/Envoy,27
+GMC,Safari,,minivan,20304,23951,16,20,190,111.2,189.8,39.2,41.6,http://www.gm.com/cgi-bin/product/division.cgi?gmc,3,36000,00126991990009,GMC Safari,26
+GMC,Savana,Recommended,full-size van,20524,27068,14,17,220,135.0,218.7,40.6,41.2,http://www.gm.com/cgi-bin/product/division.cgi?gmc,3,36000,00126991990011,GMC Savana,240
+GMC,Sierra 1500,Best Buy,full-size pickup truck,16000,28011,16,20,270,119.0,203.2,41.0,41.3,http://www.gm.com/cgi-bin/product/division.cgi?gmc,3,36000,99126061990106,GMC Sierra 1500,324
+GMC,Sierra 2500,Best Buy,full-size pickup truck,20834,29976,19,27,270,133.0,222.0,41.0,41.3,http://www.gm.com/cgi-bin/product/division.cgi?gmc,3,36000,99126061990002,GMC Sierra 2500,144
+GMC,Sierra Classic 2500/3500,,full-size pickup truck,19567,28049,14,19,255,131.5,213.1,39.9,41.7,http://www.gm.com/cgi-bin/product/division.cgi?gmc,3,36000,97126061990416,GMC Sierra Classic 2500/3500,356
+GMC,Sonoma,Recommended,compact pickup truck,12619,20231,17,21,180,108.3,190.6,39.5,42.4,http://www.gm.com/cgi-bin/product/division.cgi?gmc,3,36000,00126991990015,GMC Sonoma,25
+GMC,Yukon Denali,,full-size sport-utility vehicle,43535,43535,12,16,255,117.5,201.4,39.9,41.7,http://www.gm.com/cgi-bin/product/division.cgi?gmc,3,36000,00126111990058,GMC Yukon Denali,387
+GMC,Yukon and Yukon XL,,full-size sport-utility vehicle,31727,38948,14,18,275,116.0,198.8,40.7,41.3,http://www.gm.com/cgi-bin/product/division.cgi?gmc,3,36000,00126991990008,GMC Yukon and Yukon XL,94
+Honda,Accord,Best Buy,midsize car,15350,24550,20,28,200,105.1,186.8,39.7,42.6,http://www.honda.com/index.html,3,36000,00802041990002,Honda Accord,93
+Honda,CR-V,Best Buy,compact sport-utility vehicle,18650,21350,19,27,146,103.2,177.6,40.5,41.5,http://www.honda.com/index.html,3,36000,00802071990003,Honda CR-V,91
+Honda,Civic,Best Buy,subcompact car,10750,17630,26,31,160,103.2,164.2,38.8,42.7,http://www.honda.com/index.html,3,36000,00802031990003,Honda Civic,92
+Honda,Insight,,subcompact car,18880,20080,61,70,73,94.5,155.1,38.8,42.9,http://www.honda.com/index.html,3,36000,00802001990003,Honda Insight,393
+Honda,Odyssey,Best Buy,minivan,23400,28000,18,25,210,118.1,201.2,41.2,41.0,http://www.honda.com/index.html,3,36000,00802061990001,Honda Odyssey,323
+Honda,Passport,,midsize sport-utility vehicle,22800,30150,16,20,205,106.4,178.2,38.9,42.1,http://www.honda.com/index.html,3,36000,00802051990001,Honda Passport,88
+Honda,Prelude,Best Buy,sports coupe,23500,26000,22,27,200,101.8,178.0,37.9,43.0,http://www.honda.com/index.html,3,36000,00802041990003,Honda Prelude,87
+Honda,S2000,,sports and GT car,32000,32000,20,26,240,94.5,162.0,34.6,44.3,http://www.honda.com/index.html,3,36000,00802081990001,Honda S2000,357
+Hyundai,Accent,,subcompact car,8999,10299,28,36,92,96.1,166.7,38.9,42.6,http://www.hmaservice.com/,5,60000,00803011990001,Hyundai Accent,86
+Hyundai,Elantra,,subcompact car,11799,13249,24,33,140,100.4,174.0,38.6,43.2,http://www.hmaservice.com/,5,60000,00803041990002,Hyundai Elantra,85
+Hyundai,Sonata,Budget Buy,compact car,14999,17499,20,28,170,106.3,185.4,39.3,43.3,http://www.hmaservice.com/,5,60000,99803021990002,Hyundai Sonata,50
+Hyundai,Tiburon,,sports coupe,13999,14749,23,32,140,97.4,170.9,38.0,43.1,http://www.hmaservice.com/,5,60000,00803051990001,Hyundai Tiburon,49
+Infiniti,G20,,near-luxury car,21395,23695,24,31,145,102.4,177.5,39.2,41.5,http://www.infinitimotors.com/,4,60000,00804031990001,Infiniti G20,306
+Infiniti,I30,Recommended,near-luxury car,29465,31540,20,28,227,108.3,193.7,40.5,43.9,http://www.infinitimotors.com/,4,60000,00804051990001,Infiniti I30,371
+Infiniti,Q45,,luxury car,48895,50595,18,23,266,111.4,199.6,37.6,43.6,http://www.infinitimotors.com/,4,60000,00804021990002,Infiniti Q45,46
+Infiniti,QX4,,midsize sport-utility vehicle,35550,35550,15,18,170,106.3,183.9,38.1,41.7,http://www.infinitimotors.com/,4,60000,00804061990001,Infiniti QX4,146
+Isuzu,Amigo,,compact sport-utility vehicle,15810,20250,18,21,205,96.9,168.0,38.9,42.1,http://www.isuzu.com//home.htm,3,50000,99805051990001,Isuzu Amigo,298
+Isuzu,Hombre,,compact pickup truck,11545,21145,17,23,180,108.3,187.1,39.5,42.4,http://www.isuzu.com//home.htm,3,50000,99805081990001,Isuzu Hombre,45
+Isuzu,Rodeo,,midsize sport-utility vehicle,18080,31265,18,21,205,106.4,176.7,38.9,42.1,http://www.isuzu.com//home.htm,3,50000,99805031990001,Isuzu Rodeo,44
+Isuzu,Trooper,,full-size sport-utility vehicle,27100,28650,16,19,215,108.7,187.8,39.8,40.8,http://www.isuzu.com//home.htm,3,50000,99805031990003,Isuzu Trooper,203
+Isuzu,VehiCross,,compact sport-utility vehicle,28900,28900,15,19,215,91.8,162.6,38.2,43.1,http://www.isuzu.com//home.htm,3,50000,99805091990002,Isuzu VehiCross,366
+Jaguar,S-Type,Recommended,luxury car,42500,48000,17,23,281,114.5,191.3,38.6,43.1,http://www.jaguarcars.com/,4,50000,00407111990019,Jaguar S-Type,351
+Jaguar,XJ Sedan,,luxury car,55650,80650,16,22,370,113.0,197.8,37.2,41.2,http://www.jaguarcars.com/,4,50000,99407081990002,Jaguar XJ Sedan,43
+Jaguar,XK8,,luxury car,66200,81800,16,23,370,101.9,187.4,37.0,43.0,http://www.jaguarcars.com/,4,50000,99407101990001,Jaguar XK8,41
+Jeep,Cherokee,Budget Buy,midsize sport-utility vehicle,16680,25365,18,24,190,101.4,167.5,37.7,41.4,http://www.jeepunpaved.com/,3,36000,00107991990001,Jeep Cherokee,40
+Jeep,Grand Cherokee,,midsize sport-utility vehicle,26725,34540,15,20,235,105.9,181.5,39.7,41.4,http://www.jeepunpaved.com/,3,36000,00107991990003,Jeep Grand Cherokee,327
+Jeep,Wrangler,Budget Buy,compact sport-utility vehicle,14460,20545,16,19,181,93.4,155.4,42.3,41.1,http://www.jeepunpaved.com/,3,36000,00107991990005,Jeep Wrangler,104
+Kia,Sephia,,subcompact car,9995,12750,24,31,125,100.8,174.4,39.6,43.3,http://www.kia.co.kr,3,36000,00832011990003,Kia Sephia,103
+Kia,Sportage,,compact sport-utility vehicle,13995,19595,19,23,130,104.4,159.4,39.6,44.5,http://www.kia.co.kr,3,36000,00832021990004,Kia Sportage,102
+Land Rover,Discovery,,midsize sport-utility vehicle,34150,34150,13,17,188,100.0,185.2,40.4,42.3,http://www.landrover.com,4,50000,99409041990001,Land Rover Discovery,205
+Land Rover,Range Rover,,full-size sport-utility vehicle,59000,67300,13,15,222,108.1,185.5,38.1,42.6,http://www.landrover.com,4,50000,00409041990002,Land Rover Range Rover,114
+Lexus,ES 300,Recommended,near-luxury car,31405,31405,19,26,210,105.1,190.2,38.0,43.5,http://www.lexus.com,4,50000,00806051990001,Lexus ES 300,101
+Lexus,GS 300/400,Recommended,luxury car,37605,46005,17,24,300,110.2,189.2,39.0,44.5,http://www.lexus.com,4,50000,00806031990001,Lexus GS 300/400,100
+Lexus,LS 400,Best Buy,luxury car,53805,53805,18,25,290,112.2,196.7,38.9,43.7,http://www.lexus.com,4,50000,00806011990001,Lexus LS 400,99
+Lexus,LX 470,,full-size sport-utility vehicle,59005,59005,13,16,230,112.2,192.5,40.0,42.3,http://www.lexus.com,4,50000,00806091990001,Lexus LX 470,98
+Lexus,RX 300,Best Buy,midsize sport-utility vehicle,32505,33905,19,24,220,103.0,180.1,39.5,40.7,http://www.lexus.com,4,50000,00806081990001,Lexus RX 300,266
+Lexus,SC 300/400,,luxury car,43405,55905,18,25,290,105.9,192.5,38.3,44.1,http://www.lexus.com,4,50000,00806041990001,Lexus SC 300/400,97
+Lincoln,Continental,,luxury car,38880,38880,17,25,275,109.0,208.5,39.2,41.9,http://www.lincolnvehicles.com/,4,50000,00115171990001,Lincoln Continental,96
+Lincoln,LS,,near-luxury car,30915,34690,17,23,252,114.5,193.9,40.4,42.6,http://www.lincolnvehicles.com/,4,50000,00115201990005,Lincoln LS,358
+Lincoln,Navigator,,full-size sport-utility vehicle,42460,46210,13,18,300,119.0,204.8,39.8,40.9,http://www.lincolnvehicles.com/,4,50000,99115181990002,Lincoln Navigator,225
+Lincoln,Town Car,,luxury car,38630,43130,17,24,200,117.7,215.3,39.2,42.6,http://www.lincolnvehicles.com/,4,50000,00115141990001,Lincoln Town Car,147
+Mazda,626,Best Buy,compact car,18245,22445,21,27,170,105.1,187.4,39.2,43.6,http://www.mazdausa.com//premazda.htm,3,50000,00807061990001,Mazda 626,148
+Mazda,B-Series,Best Buy,compact pickup truck,11495,23640,17,22,160,111.6,187.5,39.2,42.4,http://www.mazdausa.com//premazda.htm,3,50000,00807151990002,Mazda B-Series,250
+Mazda,MPV,,minivan,19995,25550,18,23,170,111.8,187.0,41.0,40.8,http://www.mazdausa.com//premazda.htm,3,50000,00807121990001,Mazda MPV,369
+Mazda,Miata,Best Buy,sports and GT car,21245,23995,25,29,140,89.2,155.3,37.1,42.7,http://www.mazdausa.com//premazda.htm,3,50000,00807091990009,Mazda Miata,149
+Mazda,Millenia,,near-luxury car,24995,29995,20,27,170,108.3,189.8,39.3,43.3,http://www.mazdausa.com//premazda.htm,3,50000,00807131990001,Mazda Millenia,150
+Mazda,Protege,Recommended,subcompact car,11970,15040,26,30,122,102.8,174.0,39.3,42.2,http://www.mazdausa.com//premazda.htm,3,50000,00807071990001,Mazda Protege,153
+Mercedes-Benz,C-Class,,near-luxury car,31750,53000,18,23,302,105.9,177.4,37.2,41.5,http://www.mercedes-benz.com/,4,50000,99603191990001,Mercedes-Benz C-Class,155
+Mercedes-Benz,CLK,Recommended,luxury car,41600,55600,18,25,275,105.9,180.2,36.9,41.9,http://www.mercedes-benz.com/,4,50000,00603251990009,Mercedes-Benz CLK,348
+Mercedes-Benz,E-Class,Best Buy,luxury car,47100,69800,16,23,349,111.5,189.4,37.6,41.3,http://www.mercedes-benz.com/,4,50000,00603201990001,Mercedes-Benz E-Class,156
+Mercedes-Benz,M-Class,Best Buy,midsize sport-utility vehicle,35300,64900,14,18,342,111.0,180.6,39.8,40.3,http://www.mercedes-benz.com/,4,50000,00603261990021,Mercedes-Benz M-Class,244
+Mercedes-Benz,S-Class/CL500,,luxury car,69700,77850,16,23,302,113.6,196.6,36.9,41.7,http://www.mercedes-benz.com/,4,50000,00603251990006,Mercedes-Benz S-Class/CL500,355
+Mercedes-Benz,SL-Class,,luxury car,82600,128950,13,19,389,99.0,177.1,37.1,42.4,http://www.mercedes-benz.com/,4,50000,00603251990011,Mercedes-Benz SL-Class,158
+Mercedes-Benz,SLK230,Recommended,sports and GT car,41000,41000,21,31,185,94.5,157.3,37.4,42.7,http://www.mercedes-benz.com/,4,50000,00603251990014,Mercedes-Benz SLK230,154
+Mercury,Cougar,,sports coupe,16445,16945,19,28,170,106.4,185.0,37.8,42.5,http://www.mercuryvehicles.com/,3,36000,00161091990002,Mercury Cougar,300
+Mercury,Grand Marquis,,full-size car,22415,25135,17,24,200,114.7,212.0,39.4,42.5,http://www.mercuryvehicles.com/,3,36000,99161111990002,Mercury Grand Marquis,160
+Mercury,Mountaineer,Recommended,midsize sport-utility vehicle,27370,29835,14,19,215,111.6,190.7,39.9,42.4,http://www.mercuryvehicles.com/,3,36000,99161241990001,Mercury Mountaineer,161
+Mercury,Mystique,,compact car,16145,17445,19,28,170,106.5,184.6,39.0,42.4,http://www.mercuryvehicles.com/,3,36000,00161231990001,Mercury Mystique,162
+Mercury,Sable,,midsize car,18845,22345,19,28,153,108.5,197.7,39.3,42.2,http://www.mercuryvehicles.com/,3,36000,00161201990001,Mercury Sable,378
+Mercury,Villager,,minivan,22415,27115,17,24,170,112.2,194.7,39.7,39.9,http://www.mercuryvehicles.com/,3,36000,00161221990002,Mercury Villager,317
+Mitsubishi,Diamante,,near-luxury car,24997,27897,18,24,210,107.1,194.1,39.4,43.6,http://www.mitsucars.com/,3,36000,99808061990001,Mitsubishi Diamante,167
+Mitsubishi,Eclipse,,sports coupe,17697,21187,20,28,205,100.8,175.4,37.9,42.3,http://www.mitsucars.com/,3,36000,00808091990003,Mitsubishi Eclipse,372
+Mitsubishi,Galant,Recommended,compact car,17357,23757,20,27,195,103.7,187.8,39.9,43.5,http://www.mitsucars.com/,3,36000,99808021990101,Mitsubishi Galant,307
+Mitsubishi,Mirage,,subcompact car,11757,16947,28,36,113,95.1,168.1,38.6,43.0,http://www.mitsucars.com/,3,36000,98808011990104,Mitsubishi Mirage,170
+Mitsubishi,Montero,,full-size sport-utility vehicle,31807,31807,16,19,200,107.3,186.6,40.9,40.3,http://www.mitsucars.com/,3,36000,99808081990003,Mitsubishi Montero,171
+Mitsubishi,Montero Sport,,midsize sport-utility vehicle,22527,31357,17,20,200,107.3,178.3,38.9,42.8,http://www.mitsucars.com/,3,36000,00808081990003,Mitsubishi Montero Sport,374
+Nissan,Altima,Recommended,compact car,15140,20390,23,30,155,103.1,185.8,39.4,42.0,http://www.nissanmotors.com/1997/,3,36000,00809181990005,Nissan Altima,261
+Nissan,Frontier,Recommended,compact pickup truck,11590,22240,16,19,170,104.3,184.3,39.3,40.9,http://www.nissanmotors.com/1997/,3,36000,00809151990014,Nissan Frontier,278
+Nissan,Maxima,Recommended,midsize car,21049,26249,22,28,222,108.3,190.5,40.4,44.8,http://www.nissanmotors.com/1997/,3,36000,00809111990001,Nissan Maxima,362
+Nissan,Pathfinder,,midsize sport-utility vehicle,26399,31299,17,19,170,106.3,182.7,39.5,41.7,http://www.nissanmotors.com/1997/,3,36000,00809141990032,Nissan Pathfinder,176
+Nissan,Quest,,minivan,22259,26699,17,24,170,112.2,194.8,39.7,39.9,http://www.nissanmotors.com/1997/,3,36000,00809201990002,Nissan Quest,328
+Nissan,Sentra,,subcompact car,11799,15999,23,31,140,99.8,171.0,39.1,42.3,http://www.nissanmotors.com/1997/,3,36000,99809131990001,Nissan Sentra,178
+Nissan,Xterra,Recommended,midsize sport-utility vehicle,17599,25799,16,18,170,104.3,178.0,38.6,41.4,http://www.nissanmotors.com/1997/,3,36000,00809141990001,Nissan Xterra,361
+Oldsmobile,Alero,Recommended,compact car,16005,21545,20,32,170,107.0,186.7,38.4,42.2,http://www.oldsmobile.com/cgi-bin/index.cgi,3,36000,00128991990002,Oldsmobile Alero,293
+Oldsmobile,Bravada,,midsize sport-utility vehicle,31498,31498,16,20,190,107.0,183.7,39.6,42.4,http://www.oldsmobile.com/cgi-bin/index.cgi,3,36000,00128991990005,Oldsmobile Bravada,181
+Oldsmobile,Intrigue,Recommended,midsize car,22210,25840,19,27,215,109.0,195.9,39.3,42.4,http://www.oldsmobile.com/cgi-bin/index.cgi,3,36000,00128991990003,Oldsmobile Intrigue,212
+Oldsmobile,Silhouette,,minivan,25195,31595,19,26,185,120.0,201.4,39.9,39.9,http://www.oldsmobile.com/cgi-bin/index.cgi,3,36000,00128991990007,Oldsmobile Silhouette,185
+Plymouth,Breeze,Budget Buy,midsize car,15910,15910,21,30,150,108.0,186.7,38.1,42.3,http://www.plymouthcars.com/,3,36000,00108331990001,Plymouth Breeze,186
+Plymouth,Prowler,,sports and GT car,42800,42800,17,23,253,113.3,165.3,37.4,42.9,http://www.plymouthcars.com/,3,36000,99108321990102,Plymouth Prowler,133
+Pontiac,Bonneville,,full-size car,23680,31635,17,28,240,112.2,202.6,38.7,42.6,http://www.pontiac.com/cgi-bin/pontiac_entry.pl,3,36000,00129261990011,Pontiac Bonneville,365
+Pontiac,Firebird,,sports and GT car,18590,30950,16,26,320,101.1,193.3,37.2,43.0,http://www.pontiac.com/cgi-bin/pontiac_entry.pl,3,36000,00129991990004,Pontiac Firebird,130
+Pontiac,Grand Am,,compact car,16040,21470,20,32,170,107.0,186.3,38.3,42.1,http://www.pontiac.com/cgi-bin/pontiac_entry.pl,3,36000,99129171990107,Pontiac Grand Am,295
+Pontiac,Grand Prix,Recommended,midsize car,19935,24430,18,28,240,110.5,196.5,38.3,42.4,http://www.pontiac.com/cgi-bin/pontiac_entry.pl,3,36000,00129991990005,Pontiac Grand Prix,128
+Pontiac,Montana,,minivan,23425,24535,19,26,185,112.0,187.3,39.9,39.9,http://www.pontiac.com/cgi-bin/pontiac_entry.pl,3,36000,00129991990001,Pontiac Montana,213
+Pontiac,Sunfire,,subcompact car,14005,21745,23,33,150,104.1,181.8,38.9,42.1,http://www.pontiac.com/cgi-bin/pontiac_entry.pl,3,36000,00129221990002,Pontiac Sunfire,127
+Porsche,911,,sports and GT car,65590,83820,17,25,300,92.6,174.5,38.0,41.6,http://www.porsche-usa.com/,4,50000,00605021990001,Porsche 911,294
+Porsche,Boxster,,sports and GT car,41430,49930,18,26,250,95.2,171.0,38.4,41.6,http://www.porsche-usa.com/,4,50000,00605061990001,Porsche Boxster,319
+Saab,9-3,,near-luxury car,25900,44995,19,27,185,102.6,182.3,38.9,42.3,http://www.saabusa.com/,4,50000,00903071990004,Saab 9-3,296
+Saab,9-5,,luxury car,32575,39775,18,26,200,106.4,189.2,38.7,42.4,http://www.saabusa.com/,4,50000,00903061990001,Saab 9-5,269
+Saturn,L-Series,,midsize car,15010,21360,20,26,182,106.5,190.4,39.3,42.2,http://www.saturncars.com/,3,36000,00130021990001,Saturn L-Series,375
+Saturn,S-Series,,subcompact car,10685,16005,27,38,124,102.4,178.1,39.3,42.5,http://www.saturncars.com/,3,36000,00130021990004,Saturn S-Series,382
+Subaru,Forester,Best Buy,compact sport-utility vehicle,20095,22595,21,27,165,99.4,175.2,40.6,43.0,http://www.subaru.com/,3,36000,00810101990002,Subaru Forester,245
+Subaru,Impreza,,subcompact car,15895,19295,21,28,165,99.2,172.2,39.2,43.1,http://www.subaru.com/,3,36000,00810061990004,Subaru Impreza,252
+Subaru,Legacy,,compact car,18395,24295,21,28,165,104.3,184.4,38.1,43.3,http://www.subaru.com/,3,36000,00810071990001,Subaru Legacy,380
+Subaru,Outback,,compact car,22695,26095,21,28,165,104.3,184.4,38.1,43.3,http://www.subaru.com/,3,36000,00810061990001,Subaru Outback,381
+Suzuki,Esteem/Swift,,subcompact car,9099,16399,28,35,122,93.1,149.4,39.1,42.5,http://www.suzuki.com/,3,36000,00811021990001,Suzuki Esteem/Swift,279
+Suzuki,Vitara,,compact sport-utility vehicle,13499,22699,19,22,155,86.6,152.0,40.9,41.4,http://www.suzuki.com/,3,36000,00811041990003,Suzuki Vitara,308
+Toyota,4Runner,Recommended,midsize sport-utility vehicle,21938,36468,17,19,183,105.3,183.3,39.3,42.6,http://www.toyota.com/,3,36000,00812161990028,Toyota 4Runner,123
+Toyota,Avalon,Recommended,full-size car,25195,29755,21,29,210,107.1,191.9,38.7,41.7,http://www.toyota.com/,3,36000,00812121990002,Toyota Avalon,384
+Toyota,Camry/Solara,Best Buy,midsize car,17418,26098,21,28,194,105.1,190.0,38.3,43.3,http://www.toyota.com/,3,36000,00812081990003,Toyota Camry/Solara,121
+Toyota,Celica,Budget Buy,sports coupe,16695,21865,27,42,180,102.3,170.4,38.4,44.0,http://www.toyota.com/,3,36000,00812061990001,Toyota Celica,385
+Toyota,Corolla,Recommended,subcompact car,12418,15868,31,38,125,97.0,174.0,39.3,42.5,http://www.toyota.com/,3,36000,00812041990001,Toyota Corolla,119
+Toyota,Echo,,subcompact car,9995,11095,34,41,108,93.4,163.3,39.9,41.1,http://www.toyota.com/,3,36000,00812071990001,Toyota Echo,383
+Toyota,Land Cruiser,,full-size sport-utility vehicle,50828,50828,13,16,230,112.2,192.5,40.6,42.3,http://www.toyota.com/,3,36000,00812131990001,Toyota Land Cruiser,118
+Toyota,RAV4,Recommended,compact sport-utility vehicle,16668,19128,22,25,127,94.9,163.8,40.3,39.5,http://www.toyota.com/,3,36000,00812181990001,Toyota RAV4,115
+Toyota,Sienna,Recommended,minivan,21968,26934,19,24,194,114.2,193.5,40.6,41.9,http://www.toyota.com/,3,36000,00812141990001,Toyota Sienna,236
+Toyota,Tacoma,Recommended,compact pickup truck,11428,25178,17,21,150,103.3,184.5,38.2,41.7,http://www.toyota.com/,3,36000,00812161990027,Toyota Tacoma,247
+Toyota,Tundra,Recommended,full-size pickup truck,14995,27830,15,19,245,128.3,217.5,40.3,41.5,http://www.toyota.com/,3,36000,99812161990001,Toyota Tundra,347
+Volkswagen,Cabrio,,sports coupe,19990,23300,24,31,115,97.4,160.4,38.7,42.3,http://www.vw.com,2,24000,99606091990004,Volkswagen Cabrio,189
+Volkswagen,EuroVan,,minivan,31300,35510,15,20,140,115.0,188.5,39.3,37.8,http://www.vw.com,2,24000,00606031990001,Volkswagen EuroVan,345
+Volkswagen,Jetta/Golf,Recommended,subcompact car,14900,24170,20,28,174,98.9,163.3,38.5,41.3,http://www.vw.com,2,24000,00606091990002,Volkswagen Jetta/Golf,350
+Volkswagen,New Beetle,Best Buy,sports coupe,15900,21075,24,31,115,98.9,161.1,41.3,39.4,http://www.vw.com,2,24000,00606141990002,Volkswagen New Beetle,272
+Volkswagen,Passat,Recommended,compact car,21200,28455,20,29,190,106.4,183.8,39.7,41.5,http://www.vw.com,2,24000,99606131990001,Volkswagen Passat,277
+Volvo,40 series,,near-luxury car,22900,23900,21,28,160,100.4,176.4,38.7,41.4,http://www.volvocars.com/,4,50000,00904991990004,Volvo 40 series,388
+Volvo,70 series,,near-luxury car,27500,46500,18,23,261,104.9,185.7,37.4,41.3,http://www.volvocars.com/,4,50000,00904081990004,Volvo 70 series,210
+Volvo,S80,,luxury car,36000,40500,17,25,268,109.9,189.8,38.9,42.2,http://www.volvocars.com/,4,50000,00904101990004,Volvo S80,318
+</DATA>
+
+<INIT>
+SelectedDimensionsInOrder=Make,  Class, Base Price, Loaded Price, Recommendation, Horse Power, City Mileage, HW Mileage, Wheel Base, Length, Front Head Room, Front Leg Room, Warranty (yrs), Warranty (miles)
+</INIT>

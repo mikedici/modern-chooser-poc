@@ -1,12 +1,14 @@
 // get the data
-fetch("datasets/sample.json")
+fetch("bins.json")
 // load the json into memory
     .then(response => response.json())
     // call the json in memory "data" and feed it to an anonymous function
     .then(data => {
         // everything that relies on that data must be within this anonymous function
         class Bargram {
-            constructor(id, type, bins, entities) {
+            constructor(id, title, type, bins, bintitles, entities) {
+                this.title = title;
+                this.bintitles = bintitles;
                 this.type = type;
                 this.bins = bins;
                 this.entities = entities;
@@ -17,29 +19,20 @@ fetch("datasets/sample.json")
                 console.log("entered display()");
                 let parent = document.getElementsByClassName('chooser-container')[0];
 
-
+                let bargram_title = document.createElement("div");
+                let bargram_title_text = document.createElement("h2");
+                bargram_title_text.innerText = this.title;
+                bargram_title.appendChild(bargram_title_text);
+                bargram_title.setAttribute("style", "grid-row:" +this.id.toString() + ";grid-column:2;");
+                parent.appendChild(bargram_title);
                 console.log("parent created");
                 let bargram_container = document.createElement("div");
-                bargram_container.setAttribute("style", "grid-row:" + this.id.toString() + ";display:inline-grid;grid-gap=0;");
+                bargram_container.setAttribute("style", "grid-row:" + this.id.toString() + ";display:inline-grid;grid-gap=0;grid-column:3;");
 
                 console.log("bargram_container created");
                 for (let j = 1; j <= this.bins; j++) {
                     let bargram_section = document.createElement("div");
                     bargram_section.setAttribute("style", "display:inline-grid;grid-template-columns:auto;grid-template-rows: auto auto;grid-row:1;grid-column:" + j.toString() + ";");
-
-
-                    // generate bargram buttons
-                    let bargram_section_bottom = document.createElement("div");
-                    bargram_section_bottom.setAttribute("style", "grid-row:2;grid-column:" + j.toString() + ";");
-
-
-                    let bin_button = document.createElement("button");
-                    bin_button.setAttribute("style", "width:100%;padding:0;git ");
-
-                    bin_button.innerText = j.toString();
-                    bargram_section_bottom.append(bin_button);
-                    bargram_section.appendChild(bargram_section_bottom);
-
 
                     // generate entity icons
                     let bargram_section_top = document.createElement("div");
@@ -50,7 +43,7 @@ fetch("datasets/sample.json")
                         console.log("inner loop reached");
                         if (this.entities[k].bin === j) {
                             let temp = document.createElement("img");
-                            temp.style.maxWidth = "40px";
+                            temp.style.maxWidth = "10px";
                             temp.setAttribute("class", "entity" + this.entities[k].id);
                             temp.setAttribute("id", "bargram" + this.id.toString() + "-entity" + (k + 1).toString());
                             temp.setAttribute("src", "datasets/car-computer-icons-clip-art-car-icon.jpg");
@@ -58,9 +51,32 @@ fetch("datasets/sample.json")
                             console.log("img appended");
                         }
                     }
-                    bargram_section.appendChild(bargram_section_top);
-                    console.log("top row of section complete");
-                    bargram_container.appendChild(bargram_section);
+
+                    // generate bargram buttons
+                    let bargram_section_bottom = document.createElement("div");
+                    bargram_section_bottom.setAttribute("style", "grid-row:2;grid-column:" + j.toString() + ";");
+
+
+                    let bin_button = document.createElement("button");
+                    bin_button.setAttribute("style", "width:100%;padding:0;git ");
+
+                    bin_button.setAttribute("title", this.bintitles[j - 1]);
+                    if (bargram_section_top.children.length <= 5) {
+                        bin_button.innerText = "."
+                    } else {
+                        if (this.bintitles[j - 1].length >= bargram_section_top.children.length) {
+                            bin_button.innerText = this.bintitles[j - 1].slice(0, bargram_section_top.children.length) + ".";
+                        } else {
+                            bin_button.innerText = this.bintitles[j - 1];
+                        }
+                    }
+                    if (bargram_section_top.children.length >= 1) {
+                        bargram_section_bottom.append(bin_button);
+                        bargram_section.appendChild(bargram_section_bottom);
+                        bargram_section.appendChild(bargram_section_top);
+                        console.log("top row of section complete");
+                        bargram_container.appendChild(bargram_section);
+                    }
                     console.log("section complete");
                 }
 
@@ -70,25 +86,24 @@ fetch("datasets/sample.json")
             }
         }
 
-        let tim = new Bargram(1, "cat", 4, [{id: 1, bin: 1}, {id: 2, bin: 1}, {id: 3, bin: 1},
-            {id: 4, bin: 2}, {id: 5, bin: 2}, {id: 6, bin: 2}, {id: 7, bin: 2}, {id: 8, bin: 2}, {id: 9, bin: 2},
-            {id: 10, bin: 2}, {id: 11, bin: 3}, {id: 12, bin: 3}, {id: 13, bin: 3}, {id: 14, bin: 3}, {id: 15, bin: 3},
-            {id: 16, bin: 3}, {id: 17, bin: 3}, {id: 18, bin: 3}, {id: 19, bin: 4}, {id: 20, bin: 4}]);
+        // let bargram_one_bins = ['Suzuki', 'Daewoo', 'AM General', 'Kia', 'Infiniti', 'Jeep', 'Audi', 'Toyota', 'Volvo', 'Chrysler', 'Lexus', 'GMC', 'BMW', 'Mazda', 'Nissan', 'Saab', 'Lincoln', 'Subaru', 'Isuzu', 'Buick', 'Volkswagen', 'Jaguar', 'Mercury', 'Cadillac', 'Plymouth', 'Mitsubishi', 'Oldsmobile', 'Acura', 'Hyundai', 'Saturn', 'Porsche', 'Mercedes-Benz', 'Ford', 'Dodge', 'Chevrolet', 'Pontiac', 'Honda', 'Land Rover'];
+        //
+        // let tim = new Bargram(1, "cat", 38, bargram_one_bins, [{'id': 1, 'bin': 3}, {'id': 2, 'bin': 28}, {
+        //     'id': 3,
+        //     'bin': 28
+        // }]);
+        // tim.display();
 
-        let bob = new Bargram(2, "cat", 20, [{id: 1, bin: 1}, {id: 2, bin: 2}, {id: 3, bin: 3},
-            {id: 4, bin: 4}, {id: 5, bin: 5}, {id: 6, bin: 6}, {id: 7, bin: 7}, {id: 8, bin: 8}, {id: 9, bin: 9},
-            {id: 10, bin: 10}, {id: 11, bin: 11}, {id: 12, bin: 12}, {id: 13, bin: 13}, {id: 14, bin: 14}, {
-                id: 15,
-                bin: 15
-            },
-            {id: 16, bin: 16}, {id: 17, bin: 17}, {id: 18, bin: 18}, {id: 19, bin: 19}, {id: 20, bin: 20}]);
-        let dave = new Bargram(3, "cat", 10, [{id: 1, bin: 1}, {id: 2, bin: 1}, {id: 3, bin: 2},
-            {id: 4, bin: 2}, {id: 5, bin: 3}, {id: 6, bin: 3}, {id: 7, bin: 4}, {id: 8, bin: 4}, {id: 9, bin: 5},
-            {id: 10, bin: 5}, {id: 11, bin: 6}, {id: 12, bin: 6}, {id: 13, bin: 7}, {id: 14, bin: 7}, {id: 15, bin: 8},
-            {id: 16, bin: 8}, {id: 17, bin: 9}, {id: 18, bin: 9}, {id: 19, bin: 10}, {id: 20, bin: 10}]);
-        tim.display();
-        bob.display();
-        dave.display();
+
+        let bargrams = []
+        for (let i = 0; i < data.length; i++) {
+            bargrams.push(new Bargram(data[i].id, data[i].title, data[i].type, data[i].bintitles.length, data[i].bintitles, data[i].entities))
+        }
+
+        for (let i = 0; i < bargrams.length; i++) {
+            bargrams[i].display();
+        }
+
 
         let entity_set = new Set();
         let entity_status = {};
@@ -129,13 +144,13 @@ fetch("datasets/sample.json")
                                 entity_icons[k].style.borderStyle = "solid";
                                 entity_icons[k].style.borderColor = "red";
                                 //if there isn't an image in results for this entity create one
-                                if(document.getElementById(entity_set[j]) === null){
+                                if (document.getElementById(entity_set[j]) === null) {
 
                                     let temp = document.createElement("img");
 
                                     temp.id = entity_set[j];
-                                    temp.setAttribute("src", "datasets/"+ entity_set[j] +".png");
-                                    temp.setAttribute("width", "30px");
+                                    temp.setAttribute("src", "entities/" + entity_set[j] + ".jpg");
+                                    // temp.setAttribute("width", "30px");
                                     console.log(temp);
                                     document.getElementById("results").appendChild(temp);
                                 }
@@ -146,7 +161,7 @@ fetch("datasets/sample.json")
                                 entity_icons[k].style.borderStyle = "solid";
                                 entity_icons[k].style.borderColor = "#ffffff00";
                                 // remove the image if it exists
-                                if(document.getElementById(entity_set[j]) !== null){
+                                if (document.getElementById(entity_set[j]) !== null) {
                                     document.getElementById(entity_set[j]).remove();
                                 }
 

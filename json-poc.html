@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div></div>
+<script>
+    // get the data
+    fetch("bins.json")
+    // load the json into memory
+        .then(response => response.json())
+        // call the json in memory "data" and feed it to an anonymous function
+        .then(data => {
+            let bargram_titles = [];
+            for(let i = 0; i < data.length; i++){
+                bargram_titles.push(data[i].title);
+                let info = "" + data[i].id + " ," + data[i].type + " ,"  + data[i].bintitles.length + " ,"   + data[i].bintitles;
+                console.log(info);
+                console.log(data[i].entities);
+            }
+            console.log(bargram_titles);
+        });
+</script>
+</body>
+</html>

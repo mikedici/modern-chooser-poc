@@ -4,44 +4,33 @@
     <meta charset="UTF-8">
     <title>Team D Proof of Concept</title>
     <style>
-        /*body {*/
-        /*    color: #434343;*/
-        /*    width: 100vw;*/
-        /*    height: 100vh;*/
-        /*}*/
+        .chooser-container {
+            display: grid;
+            grid-template-columns: 1fr auto auto 1fr;
+            grid-gap: 1em;
+        }
+        .chooser-container > div {
 
-        /*.grid-container {*/
-        /*    display: grid;*/
-        /*    grid-template-columns: auto;*/
-        /*    grid-template-rows: auto 1fr auto;*/
-        /*    width: 100vw;*/
-        /*    height: 100vh;*/
-        /*    grid-gap: 2em;*/
-        /*}*/
-
-        /*.page-title {*/
-        /*    grid-row: 1;*/
-        /*    text-align: center;*/
-        /*}*/
-        /*.chooser-container{*/
-        /*    display: grid;*/
-        /*    grid-template-columns: 1fr auto 1fr;*/
-        /*    grid-row: 2;*/
-        /*}*/
-
-        /*.footer {*/
-        /*    grid-row: 3;*/
-        /*}*/
-
-
+        }
+        .page-title {
+            grid-column: 1/5;
+            margin: auto;
+        }
+        button {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
     </style>
 </head>
 <body>
 <div class="grid-container">
-    <div class="page-title"><h1>Modern-Chooser POC</h1></div>
-    <div class="chooser-container"></div>
+
+    <div class="chooser-container">
+        <div class="page-title"><h1>Modern-Chooser POC</h1></div>
+    </div>
     <span id="results"></span>
-<!--    <div class="footer"> stuff</div>-->
+    <!--    <div class="footer"> stuff</div>-->
 </div>
 <script src="src/bargrams.js"></script>
 </body>
