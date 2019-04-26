@@ -20,10 +20,11 @@ fetch("bins.json")
                 let parent = document.getElementsByClassName('chooser-container')[0];
 
                 let bargram_title = document.createElement("div");
-                let bargram_title_text = document.createElement("h2");
+                let bargram_title_text = document.createElement("h4");
+                bargram_title_text.className = 'attribute-title';
                 bargram_title_text.innerText = this.title;
                 bargram_title.appendChild(bargram_title_text);
-                bargram_title.setAttribute("style", "grid-row:" +this.id.toString() + ";grid-column:2;");
+                bargram_title.setAttribute("style", "grid-row:" +this.id.toString() + ";grid-column:2; align-self: end;");
                 parent.appendChild(bargram_title);
                 console.log("parent created");
                 let bargram_container = document.createElement("div");
@@ -36,7 +37,7 @@ fetch("bins.json")
 
                     // generate entity icons
                     let bargram_section_top = document.createElement("div");
-                    bargram_section_top.setAttribute("style", "grid-row:1;grid-column:" + j.toString() + ";");
+                    bargram_section_top.setAttribute("style", "grid-row:1;grid-column:" + j.toString() + "; align-self: start;");
 
 
                     for (let k = 0; k < this.entities.length; k++) {
@@ -47,6 +48,8 @@ fetch("bins.json")
                             temp.setAttribute("class", "entity" + this.entities[k].id);
                             temp.setAttribute("id", "bargram" + this.id.toString() + "-entity" + (k + 1).toString());
                             temp.setAttribute("src", "datasets/car-computer-icons-clip-art-car-icon.jpg");
+                            temp.setAttribute("height", "8px");
+                            temp.setAttribute("height", "8px");
                             bargram_section_top.appendChild(temp);
                             console.log("img appended");
                         }
@@ -54,7 +57,7 @@ fetch("bins.json")
 
                     // generate bargram buttons
                     let bargram_section_bottom = document.createElement("div");
-                    bargram_section_bottom.setAttribute("style", "grid-row:2;grid-column:" + j.toString() + ";");
+                    bargram_section_bottom.setAttribute("style", "grid-row:2;grid-column:" + j.toString() + "; align-self: end;");
 
 
                     let bin_button = document.createElement("button");
@@ -95,9 +98,9 @@ fetch("bins.json")
         // tim.display();
 
 
-        let bargrams = []
+        let bargrams = [];
         for (let i = 0; i < data.length; i++) {
-            bargrams.push(new Bargram(data[i].id, data[i].title, data[i].type, data[i].bintitles.length, data[i].bintitles, data[i].entities))
+            bargrams.push(new Bargram(data[i].id, data[i].title, data[i].type, data[i].bintitles.length, data[i].bintitles, data[i].entities));
         }
 
         for (let i = 0; i < bargrams.length; i++) {

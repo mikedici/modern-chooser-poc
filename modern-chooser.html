@@ -3,35 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <title>Team D Proof of Concept</title>
+    <script type="application/javascript" src="libs/scripts/jquery_3.4.0.js"></script>
+    <script type="application/javascript" src="libs/scripts/lodash_4.17.11.js"></script>
     <style>
         .chooser-container {
             display: grid;
             grid-template-columns: 1fr auto auto 1fr;
             grid-gap: 1em;
         }
+
         .chooser-container > div {
 
         }
+
         .page-title {
             grid-column: 1/5;
             margin: auto;
         }
+
         button {
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
         }
+
+        h4.attribute-title{
+            margin: 0;
+        }
     </style>
 </head>
 <body>
-<div class="grid-container">
+    <div class="grid-container">
+        <div class="page-title" style="display: grid; justify-content: center; align-content: center;">
+            <h2>Modern-Chooser POC</h2>
+        </div>
+        <div class="chooser-container" style="height: 500px; overflow-y: auto;">
+        </div>
+        <div id="filtered-results">
 
-    <div class="chooser-container">
-        <div class="page-title"><h1>Modern-Chooser POC</h1></div>
+        </div>
+        <!--    <div class="footer"> stuff</div>-->
     </div>
-    <span id="results"></span>
-    <!--    <div class="footer"> stuff</div>-->
-</div>
-<script src="src/bargrams.js"></script>
+    <script src="src/bargrams.js"></script>
 </body>
 </html>
