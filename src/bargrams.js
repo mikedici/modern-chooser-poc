@@ -1,10 +1,26 @@
-// get the data
-fetch("bins.json")
-// load the json into memory
-    .then(response => response.json())
-    // call the json in memory "data" and feed it to an anonymous function
-    .then(data => {
+function loadJsonDataFromFile(filename) {
+    return fetch(filename)
+        .then(function (response) {
+            return response.json();
+        });
+}
+
+let binsDataPromise = loadJsonDataFromFile("bins.json");
+let allRecordsPromise = loadJsonDataFromFile("records.json");
+
+let allRecords = [];
+let filteredRecords = [];
+let filterParams = {};
+let bargramMap = {};
+
+Promise.all([binsDataPromise, allRecordsPromise])
+    .then(values => {
         // everything that relies on that data must be within this anonymous function
+        let data = values[0];
+        allRecords = values[1];
+        filteredRecords = allRecords;
+        console.log('promise values >> ', data, allRecords);
+
         class Bargram {
             constructor(id, title, type, bins, bintitles, entities) {
                 this.title = title;
