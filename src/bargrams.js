@@ -140,6 +140,7 @@ Promise.all([binsDataPromise, allRecordsPromise])
         //console.log(entity_status);
 
         register_icon_listeners(icons, entity_status, entity_set);
+        updateFilterResultsView();
     });
 
 let register_icon_listeners = (icons, entity_status, entity_set) => {
@@ -194,32 +195,34 @@ function binButtonClicked(event) {
     event.stopImmediatePropagation();
     event.preventDefault();
     let targetElement = $(event.target);
-    let isSelected = parseInt(targetElement.data('selected'));
+    let isSelected = parseInt(targetElement.attr('data-selected'));
     let filterParamData = {
-        bargramId: parseInt(targetElement.data('bargramId')),
-        bargramTitle: targetElement.data('bargramTitle'),
-        bargramDataType: targetElement.data('bargramDataType'),
-        binIndex: parseInt(targetElement.attr('binIndex')),
+        bargramId: parseInt(targetElement.attr('data-bargram-id')),
+        bargramTitle: targetElement.attr('data-bargram-title'),
+        bargramDataType: targetElement.attr('data-bargram-data-type'),
+        binIndex: parseInt(targetElement.attr('data-bin-index')),
         binTitle: targetElement.attr('title')
     };
     if (filterParamData['bargramDataType'] === 'con') {
         filterParamData['binTitle'] = parseFloat(filterParamData['binTitle']);
-        filterParamData['binRangeMax'] = parseFloat(targetElement.attr('binIndex'));
+        filterParamData['binRangeMax'] = parseFloat(bargramMap[filterParamData['bargramId']].bintitles[filterParamData['binIndex']+1]);
     }
-    console.log(event.target, isSelected, filterParamData);
+    console.log(isSelected, filterParams, filterParamData);
     if (isSelected) {
         toggleBinButtonActiveState(targetElement);
         delete filterParams[filterParamData['bargramTitle']];
-        targetElement.data('selected', '0');
+        targetElement.attr('data-selected', '0');
     } else {
         if (filterParams[filterParamData['bargramTitle']]) {
-            let currentActiveBinButton = $('button#bin-btn-'+ filterParams[filterParamData['bargramId']] + '-' + (filterParams[filterParamData['binIndex']] + 1));
+            let currentActiveBinButton = $('button#bin-btn-'+ filterParams[filterParamData['bargramTitle']].bargramId + '-' + (filterParams[filterParamData['bargramTitle']].binIndex + 1));
             toggleBinButtonActiveState(currentActiveBinButton);
+            currentActiveBinButton.attr('data-selected', '0');
         }
         toggleBinButtonActiveState(targetElement);
         filterParams[filterParamData['bargramTitle']] = filterParamData;
-        targetElement.data('selected', '1');
+        targetElement.attr('data-selected', '1');
     }
+    console.log(parseInt(targetElement.attr('data-selected')), filterParams, filterParamData);
     updateFilterResults();
     updateFilterResultsView();
 }
