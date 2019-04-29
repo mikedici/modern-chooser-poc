@@ -32,7 +32,7 @@ Promise.all([binsDataPromise, allRecordsPromise])
             }
 
             display() {
-                console.log("entered display()");
+                //console.log("entered display()");
                 let parent = document.getElementsByClassName('chooser-container')[0];
 
                 let bargram_title = document.createElement("div");
@@ -42,11 +42,11 @@ Promise.all([binsDataPromise, allRecordsPromise])
                 bargram_title.appendChild(bargram_title_text);
                 bargram_title.setAttribute("style", "grid-row:" +this.id.toString() + ";grid-column:2; align-self: end;");
                 parent.appendChild(bargram_title);
-                console.log("parent created");
+                //console.log("parent created");
                 let bargram_container = document.createElement("div");
                 bargram_container.setAttribute("style", "grid-row:" + this.id.toString() + ";display:inline-grid;grid-gap=0;grid-column:3;");
 
-                console.log("bargram_container created");
+                //console.log("bargram_container created");
                 for (let j = 1; j <= this.bins; j++) {
                     let bargram_section = document.createElement("div");
                     bargram_section.setAttribute("style", "display:inline-grid;grid-template-columns:auto;grid-template-rows: auto auto;grid-row:1;grid-column:" + j.toString() + ";");
@@ -55,9 +55,8 @@ Promise.all([binsDataPromise, allRecordsPromise])
                     let bargram_section_top = document.createElement("div");
                     bargram_section_top.setAttribute("style", "grid-row:1;grid-column:" + j.toString() + "; align-self: start;");
 
-
                     for (let k = 0; k < this.entities.length; k++) {
-                        console.log("inner loop reached");
+                        //console.log("inner loop reached");
                         if (this.entities[k].bin === j) {
                             let temp = document.createElement("img");
                             temp.style.maxWidth = "10px";
@@ -67,7 +66,7 @@ Promise.all([binsDataPromise, allRecordsPromise])
                             temp.setAttribute("height", "8px");
                             temp.setAttribute("height", "8px");
                             bargram_section_top.appendChild(temp);
-                            console.log("img appended");
+                            //console.log("img appended");
                         }
                     }
 
@@ -93,15 +92,16 @@ Promise.all([binsDataPromise, allRecordsPromise])
                         bargram_section_bottom.append(bin_button);
                         bargram_section.appendChild(bargram_section_bottom);
                         bargram_section.appendChild(bargram_section_top);
-                        console.log("top row of section complete");
+                        //console.log("top row of section complete");
                         bargram_container.appendChild(bargram_section);
                     }
                     console.log("section complete");
+                    //console.log("section complete");
                 }
 
 
                 parent.appendChild(bargram_container);
-                console.log("bargram complete");
+                //console.log("bargram complete");
             }
         }
 
@@ -142,8 +142,8 @@ Promise.all([binsDataPromise, allRecordsPromise])
         for (let j = 0; j < entity_set.length; j++) {
             entity_status[entity_set[j]] = false;
         }
-        console.log(entity_set);
-        console.log(entity_status);
+        //console.log(entity_set);
+        //console.log(entity_status);
 
         let register_icon_listeners = () => {
             for (let i = 0; i < icons.length; i++) {
