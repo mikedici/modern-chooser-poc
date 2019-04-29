@@ -132,52 +132,52 @@ Promise.all([binsDataPromise, allRecordsPromise])
         //console.log(entity_set);
         //console.log(entity_status);
 
-        let register_icon_listeners = () => {
-            for (let i = 0; i < icons.length; i++) {
-                // register an event listener for each icon
-                icons[i].addEventListener("click", (event) => {
-                    let clicked = event.target.classList[0];
-                    // toggle the status of the entity
-                    entity_status[clicked] = !entity_status[clicked];
-
-                    // loop through all entity icons in the entity set
-                    for (let j = 0; j < entity_set.length; j++) {
-                        let entity_icons = document.getElementsByClassName(entity_set[j]);
-                        for (let k = 0; k < entity_icons.length; k++) {
-                            // if the status is true set the border to red
-                            if (entity_status[entity_set[j]]) {
-                                entity_icons[k].style.borderWidth = "2px";
-                                entity_icons[k].style.borderStyle = "solid";
-                                entity_icons[k].style.borderColor = "red";
-                                //if there isn't an image in results for this entity create one
-                                if (document.getElementById(entity_set[j]) === null) {
-
-                                    let temp = document.createElement("img");
-
-                                    temp.id = entity_set[j];
-                                    temp.setAttribute("src", "entities/" + entity_set[j] + ".jpg");
-                                    // temp.setAttribute("width", "30px");
-                                    console.log(temp);
-                                    document.getElementById("results").appendChild(temp);
-                                }
-                                //if the status is false
-                            } else {
-                                // make the border transparent
-                                entity_icons[k].style.borderWidth = "2px";
-                                entity_icons[k].style.borderStyle = "solid";
-                                entity_icons[k].style.borderColor = "#ffffff00";
-                                // remove the image if it exists
-                                if (document.getElementById(entity_set[j]) !== null) {
-                                    document.getElementById(entity_set[j]).remove();
-                                }
-
-                            }
-                        }
-                    }
-                });
-            }
-
-        };
-        register_icon_listeners();
-
+        register_icon_listeners(icons, entity_status, entity_set);
     });
+
+let register_icon_listeners = (icons, entity_status, entity_set) => {
+    for (let i = 0; i < icons.length; i++) {
+        // register an event listener for each icon
+        icons[i].addEventListener("click", (event) => {
+            let clicked = event.target.classList[0];
+            // toggle the status of the entity
+            entity_status[clicked] = !entity_status[clicked];
+
+            // loop through all entity icons in the entity set
+            for (let j = 0; j < entity_set.length; j++) {
+                let entity_icons = document.getElementsByClassName(entity_set[j]);
+                for (let k = 0; k < entity_icons.length; k++) {
+                    // if the status is true set the border to red
+                    if (entity_status[entity_set[j]]) {
+                        entity_icons[k].style.borderWidth = "2px";
+                        entity_icons[k].style.borderStyle = "solid";
+                        entity_icons[k].style.borderColor = "red";
+                        //if there isn't an image in results for this entity create one
+                        if (document.getElementById(entity_set[j]) === null) {
+
+                            let temp = document.createElement("img");
+
+                            temp.id = entity_set[j];
+                            temp.setAttribute("src", "entities/" + entity_set[j] + ".jpg");
+                            // temp.setAttribute("width", "30px");
+                            //console.log(temp);
+                            document.getElementById("results").appendChild(temp);
+                        }
+                        //if the status is false
+                    } else {
+                        // make the border transparent
+                        entity_icons[k].style.borderWidth = "2px";
+                        entity_icons[k].style.borderStyle = "solid";
+                        entity_icons[k].style.borderColor = "#ffffff00";
+                        // remove the image if it exists
+                        if (document.getElementById(entity_set[j]) !== null) {
+                            document.getElementById(entity_set[j]).remove();
+                        }
+
+                    }
+                }
+            }
+        });
+    }
+
+};
