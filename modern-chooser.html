@@ -41,12 +41,26 @@
 </head>
 <body>
     <div class="grid-container">
-        <div class="page-title" style="display: grid;"><!--justify-content: center; align-content: center;-->
-            <div style="display: inline-grid; align-self: start">
-                <button type="button" class="reset-btn">Reset</button>
-            </div>
-            <div style="display: inline-grid;justify-content: center; align-content: center;">
+        <div class="page-title" style="display: grid;">
+            <div style="grid-template-rows:auto; grid-template-columns: auto; justify-self: center; align-self: center;">
                 <h2>Modern-Chooser POC</h2>
+            </div>
+            <div style="grid-template-rows:auto; grid-template-columns: auto; align-self: start;">
+                <div style="display: inline-grid;">
+                    <button type="button" class="undo-btn">Undo</button>
+                </div>
+                <div style="display: inline-grid;">
+                    <button type="button" class="reset-btn">Reset</button>
+                </div>
+                <div style="display: inline-grid;">
+                    <button type="button" class="redo-btn">Redo</button>
+                </div>
+                <div style="display: inline-grid;">
+                    <button type="button" class="deep-back-btn">Back</button>
+                </div>
+                <div style="display: inline-grid;">
+                    <button type="button" class="deep-filter-btn">Deep</button>
+                </div>
             </div>
         </div>
         <div class="chooser-container" style="height: 500px; overflow-y: auto;">

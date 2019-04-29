@@ -207,7 +207,7 @@ function binButtonClicked(event) {
         filterParamData['binTitle'] = parseFloat(filterParamData['binTitle']);
         filterParamData['binRangeMax'] = parseFloat(bargramMap[filterParamData['bargramId']].bintitles[filterParamData['binIndex']+1]);
     }
-    console.log(isSelected, filterParams, filterParamData);
+    // console.log(isSelected, filterParams, filterParamData);
     if (isSelected) {
         toggleBinButtonActiveState(targetElement);
         delete filterParams[filterParamData['bargramTitle']];
@@ -222,7 +222,7 @@ function binButtonClicked(event) {
         filterParams[filterParamData['bargramTitle']] = filterParamData;
         targetElement.attr('data-selected', '1');
     }
-    console.log(parseInt(targetElement.attr('data-selected')), filterParams, filterParamData);
+    // console.log(parseInt(targetElement.attr('data-selected')), filterParams, filterParamData);
     updateFilterResults();
     updateFilterResultsView();
 }
