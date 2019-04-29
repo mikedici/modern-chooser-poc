@@ -19,7 +19,6 @@ Promise.all([binsDataPromise, allRecordsPromise])
         let data = values[0];
         allRecords = values[1];
         filteredRecords = allRecords;
-        console.log('promise values >> ', data, allRecords);
 
         class Bargram {
             constructor(id, title, type, bins, bintitles, entities) {
@@ -40,7 +39,7 @@ Promise.all([binsDataPromise, allRecordsPromise])
                 bargram_title_text.className = 'attribute-title';
                 bargram_title_text.innerText = this.title;
                 bargram_title.appendChild(bargram_title_text);
-                bargram_title.setAttribute("style", "grid-row:" +this.id.toString() + ";grid-column:2; align-self: end;");
+                bargram_title.setAttribute("style", "grid-row:" + this.id.toString() + ";grid-column:2; align-self: end;");
                 parent.appendChild(bargram_title);
                 //console.log("parent created");
                 let bargram_container = document.createElement("div");
@@ -74,11 +73,19 @@ Promise.all([binsDataPromise, allRecordsPromise])
                     let bargram_section_bottom = document.createElement("div");
                     bargram_section_bottom.setAttribute("style", "grid-row:2;grid-column:" + j.toString() + "; align-self: end;");
 
-
                     let bin_button = document.createElement("button");
-                    bin_button.setAttribute("style", "width:100%;padding:0;git ");
-
+                    bin_button.setAttribute("id", "bin-btn-" + this.id + "-" + j);
+                    bin_button.setAttribute("data-bargram-id", this.id);
+                    bin_button.setAttribute("data-bargram-title", this.title);
+                    bin_button.setAttribute("data-bargram-data-type", this.type);
+                    bin_button.setAttribute("data-bin-index", "" + (j - 1));
+                    if (this.type === 'con') {
+                        bin_button.setAttribute("data-bin-range-max", "" + this.bintitles[j]);
+                    }
+                    bin_button.setAttribute("data-selected", '0');
+                    bin_button.setAttribute("style", "width:100%; padding:0; cursor:pointer;");
                     bin_button.setAttribute("title", this.bintitles[j - 1]);
+
                     if (bargram_section_top.children.length <= 5) {
                         bin_button.innerText = "."
                     } else {
@@ -95,7 +102,7 @@ Promise.all([binsDataPromise, allRecordsPromise])
                         //console.log("top row of section complete");
                         bargram_container.appendChild(bargram_section);
                     }
-                    console.log("section complete");
+                    bin_button.addEventListener('click', binButtonClicked);
                     //console.log("section complete");
                 }
 
@@ -181,3 +188,105 @@ let register_icon_listeners = (icons, entity_status, entity_set) => {
     }
 
 };
+
+function binButtonClicked(event) {
+    event.stopPropagation();
+    event.stopImmediatePropagation();
+    event.preventDefault();
+    let targetElement = $(event.target);
+    let isSelected = parseInt(targetElement.data('selected'));
+    let filterParamData = {
+        bargramId: parseInt(targetElement.data('bargramId')),
+        bargramTitle: targetElement.data('bargramTitle'),
+        bargramDataType: targetElement.data('bargramDataType'),
+        binIndex: parseInt(targetElement.attr('binIndex')),
+        binTitle: targetElement.attr('title')
+    };
+    if (filterParamData['bargramDataType'] === 'con') {
+        filterParamData['binTitle'] = parseFloat(filterParamData['binTitle']);
+        filterParamData['binRangeMax'] = parseFloat(targetElement.attr('binIndex'));
+    }
+    console.log(event.target, isSelected, filterParamData);
+    if (isSelected) {
+        toggleBinButtonActiveState(targetElement);
+        delete filterParams[filterParamData['bargramTitle']];
+        targetElement.data('selected', '0');
+    } else {
+        if (filterParams[filterParamData['bargramTitle']]) {
+            let currentActiveBinButton = $('button#bin-btn-'+ filterParams[filterParamData['bargramId']] + '-' + (filterParams[filterParamData['binIndex']] + 1));
+            toggleBinButtonActiveState(currentActiveBinButton);
+        }
+        toggleBinButtonActiveState(targetElement);
+        filterParams[filterParamData['bargramTitle']] = filterParamData;
+        targetElement.data('selected', '1');
+    }
+    updateFilterResults();
+    updateFilterResultsView();
+}
+
+function toggleBinButtonActiveState(btnElement) {
+    btnElement.toggleClass('active-bin-btn');
+}
+
+function updateFilterResults() {
+    filteredRecords = [];
+    for (let i = 0; i < allRecords.length; i++) {
+        let recordMatch = isFilterConditionsMatch(allRecords[i]);
+        if (recordMatch) {
+            filteredRecords.push(allRecords[i]);
+        }
+    }
+}
+
+function isFilterConditionsMatch(record) {
+    let match = true;
+    for (let attribute in filterParams) {
+        if (filterParams.hasOwnProperty(attribute)) {
+            let paramData = filterParams[attribute];
+            match = match && isConditionMatch(paramData, record, attribute);
+            if (!match) {
+                match = false;
+                break;
+            }
+        }
+    }
+    return match;
+}
+
+function isConditionMatch(paramData, record, attribute) {
+    if (paramData['bargramDataType'] === 'cat' && record[attribute] === paramData['binTitle']) {
+        return true;
+    } else if (paramData['bargramDataType'] === 'con' && (paramData['binTitle'] <= record[attribute] && record[attribute] < paramData['binRangeMax'])) {
+        return true;
+    }
+    return false;
+}
+
+function updateFilterResultsView() {
+    let containerElement = $('div#filtered-results-container');
+    clearCurrentResults(containerElement);
+    let gridContainerElement = $("<div style='display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); grid-column-gap: 15px; grid-row-gap: 15px;'></div>");
+    let gridItem = "<div class='grid-item' " +
+                        "style='display: inline-grid; grid-template-rows: auto auto; grid-template-columns:auto; " +
+                                "border: 1px solid brown; height: 120px; width: 120px;'>" +
+                    "</div>";
+    gridContainerElement.appendTo(containerElement);
+
+    for (let i = 0; i < filteredRecords.length; i++) {
+        let gridItemElement = $(gridItem);
+        let itemImage = "<div class='item-image' style='grid-row: 1; grid-column:1; align-self: stretch; justify-self: stretch;'>" +
+                            "<img src='cars/" + filteredRecords[i].Image + ".jpg' height='100%' width='100%'>" +
+                        "</div>";
+        let itemTitle = "<div class='item-title' style='grid-row: 2; grid-column:1; align-self: end; justify-content: center'>" +
+                            filteredRecords[i].Details +
+                        "</div>";
+        $(itemImage).appendTo(gridItemElement);
+        $(itemTitle).appendTo(gridItemElement);
+        gridItemElement.appendTo(gridContainerElement);
+    }
+}
+
+function clearCurrentResults(jqDomElement) {
+    jqDomElement = jqDomElement || $('div#filtered-results-container');
+    jqDomElement.empty();
+}
