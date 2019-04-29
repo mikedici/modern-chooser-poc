@@ -41,8 +41,13 @@
 </head>
 <body>
     <div class="grid-container">
-        <div class="page-title" style="display: grid; justify-content: center; align-content: center;">
-            <h2>Modern-Chooser POC</h2>
+        <div class="page-title" style="display: grid;"><!--justify-content: center; align-content: center;-->
+            <div style="display: inline-grid; align-self: start">
+                <button type="button" class="reset-btn">Reset</button>
+            </div>
+            <div style="display: inline-grid;justify-content: center; align-content: center;">
+                <h2>Modern-Chooser POC</h2>
+            </div>
         </div>
         <div class="chooser-container" style="height: 500px; overflow-y: auto;">
         </div>

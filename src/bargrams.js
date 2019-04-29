@@ -293,3 +293,14 @@ function clearCurrentResults(jqDomElement) {
     jqDomElement = jqDomElement || $('div#filtered-results-container');
     jqDomElement.empty();
 }
+
+$('button.reset-btn').click(function () {
+    for(let param in filterParams){
+        let activeBinButton = $('button#bin-btn-'+ filterParams[param].bargramId + '-' + (filterParams[param].binIndex + 1));
+        toggleBinButtonActiveState(activeBinButton);
+        activeBinButton.attr('data-selected', '0');
+    }
+    filterParams = {};
+    filteredRecords = allRecords;
+    updateFilterResultsView();
+});
