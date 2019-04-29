@@ -105,24 +105,11 @@ Promise.all([binsDataPromise, allRecordsPromise])
             }
         }
 
-        // let bargram_one_bins = ['Suzuki', 'Daewoo', 'AM General', 'Kia', 'Infiniti', 'Jeep', 'Audi', 'Toyota', 'Volvo', 'Chrysler', 'Lexus', 'GMC', 'BMW', 'Mazda', 'Nissan', 'Saab', 'Lincoln', 'Subaru', 'Isuzu', 'Buick', 'Volkswagen', 'Jaguar', 'Mercury', 'Cadillac', 'Plymouth', 'Mitsubishi', 'Oldsmobile', 'Acura', 'Hyundai', 'Saturn', 'Porsche', 'Mercedes-Benz', 'Ford', 'Dodge', 'Chevrolet', 'Pontiac', 'Honda', 'Land Rover'];
-        //
-        // let tim = new Bargram(1, "cat", 38, bargram_one_bins, [{'id': 1, 'bin': 3}, {'id': 2, 'bin': 28}, {
-        //     'id': 3,
-        //     'bin': 28
-        // }]);
-        // tim.display();
-
-
-        let bargrams = [];
         for (let i = 0; i < data.length; i++) {
-            bargrams.push(new Bargram(data[i].id, data[i].title, data[i].type, data[i].bintitles.length, data[i].bintitles, data[i].entities));
+            let bargram = new Bargram(data[i].id, data[i].title, data[i].type, data[i].bintitles.length, data[i].bintitles, data[i].entities);
+            bargramMap[data[i].id] = bargram;
+            bargram.display();
         }
-
-        for (let i = 0; i < bargrams.length; i++) {
-            bargrams[i].display();
-        }
-
 
         let entity_set = new Set();
         let entity_status = {};
