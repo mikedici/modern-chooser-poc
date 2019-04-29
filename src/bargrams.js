@@ -257,7 +257,7 @@ function isFilterConditionsMatch(record) {
 }
 
 function isConditionMatch(paramData, record, attribute) {
-    if (paramData['bargramDataType'] === 'cat' && record[attribute] === paramData['binTitle']) {
+    if (paramData['bargramDataType'] === 'cat' && record[attribute] == paramData['binTitle']) {
         return true;
     } else if (paramData['bargramDataType'] === 'con' && (paramData['binTitle'] <= record[attribute] && record[attribute] < paramData['binRangeMax'])) {
         return true;
