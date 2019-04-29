@@ -11,8 +11,8 @@
     "Horse Power": 195,
     "Wheel Base": 130,
     "Length": 184.5,
-    "Front Head Room": null,
-    "Front Leg Room": null,
+    "Front Head Room": "",
+    "Front Leg Room": "",
     "Manufacturer URL": "",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
@@ -37,7 +37,7 @@
     "Manufacturer URL": "http://www.acura.com/",
     "Basic Warranty - Years": 4,
     "Basic Warranty - Miles": 50000,
-    "Image": 801011990008,
+    "Image": "00801011990008",
     "Details": "Acura Integra",
     "Car URL": 4
   },
@@ -58,7 +58,7 @@
     "Manufacturer URL": "http://www.acura.com/",
     "Basic Warranty - Years": 4,
     "Basic Warranty - Miles": 50000,
-    "Image": 801041990003,
+    "Image": "00801041990003",
     "Details": "Acura NSX",
     "Car URL": 5
   },
@@ -79,7 +79,7 @@
     "Manufacturer URL": "http://www.acura.com/",
     "Basic Warranty - Years": 4,
     "Basic Warranty - Miles": 50000,
-    "Image": 801021990009,
+    "Image": "00801021990009",
     "Details": "Acura RL",
     "Car URL": 13
   },
@@ -100,7 +100,7 @@
     "Manufacturer URL": "http://www.acura.com/",
     "Basic Warranty - Years": 4,
     "Basic Warranty - Miles": 50000,
-    "Image": 801021990012,
+    "Image": "00801021990012",
     "Details": "Acura TL",
     "Car URL": 320
   },
@@ -121,7 +121,7 @@
     "Manufacturer URL": "http://www.audi.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 50000,
-    "Image": 601051990001,
+    "Image": "00601051990001",
     "Details": "Audi A4",
     "Car URL": 10
   },
@@ -142,7 +142,7 @@
     "Manufacturer URL": "http://www.audi.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 50000,
-    "Image": 601031990001,
+    "Image": "00601031990001",
     "Details": "Audi A6",
     "Car URL": 11
   },
@@ -163,7 +163,7 @@
     "Manufacturer URL": "http://www.audi.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 50000,
-    "Image": 601071990001,
+    "Image": "00601071990001",
     "Details": "Audi A8",
     "Car URL": 7
   },
@@ -184,7 +184,7 @@
     "Manufacturer URL": "http://www.audi.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 50000,
-    "Image": 601091990002,
+    "Image": "00601091990002",
     "Details": "Audi TT",
     "Car URL": 368
   },
@@ -205,7 +205,7 @@
     "Manufacturer URL": "http://www.bmwusa.com/",
     "Basic Warranty - Years": 4,
     "Basic Warranty - Miles": 50000,
-    "Image": 602091990004,
+    "Image": "00602091990004",
     "Details": "BMW 3-Series",
     "Car URL": 60
   },
@@ -226,7 +226,7 @@
     "Manufacturer URL": "http://www.bmwusa.com/",
     "Basic Warranty - Years": 4,
     "Basic Warranty - Miles": 50000,
-    "Image": 602061990002,
+    "Image": "00602061990002",
     "Details": "BMW 5-Series",
     "Car URL": 59
   },
@@ -247,7 +247,7 @@
     "Manufacturer URL": "http://www.bmwusa.com/",
     "Basic Warranty - Years": 4,
     "Basic Warranty - Miles": 50000,
-    "Image": 602071990001,
+    "Image": "00602071990001",
     "Details": "BMW 7-Series",
     "Car URL": 2
   },
@@ -268,7 +268,7 @@
     "Manufacturer URL": "http://www.bmwusa.com/",
     "Basic Warranty - Years": 4,
     "Basic Warranty - Miles": 50000,
-    "Image": 602991990001,
+    "Image": "00602991990001",
     "Details": "BMW X5",
     "Car URL": 354
   },
@@ -289,7 +289,7 @@
     "Manufacturer URL": "http://www.bmwusa.com/",
     "Basic Warranty - Years": 4,
     "Basic Warranty - Miles": 50000,
-    "Image": 602131990001,
+    "Image": "00602131990001",
     "Details": "BMW Z3 Series",
     "Car URL": 57
   },
@@ -310,7 +310,7 @@
     "Manufacturer URL": "http://www.buick.com/index.htm",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 121211990001,
+    "Image": "00121211990001",
     "Details": "Buick Century",
     "Car URL": 56
   },
@@ -331,7 +331,7 @@
     "Manufacturer URL": "http://www.buick.com/index.htm",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 121281990001,
+    "Image": "00121281990001",
     "Details": "Buick LeSabre",
     "Car URL": 353
   },
@@ -352,7 +352,7 @@
     "Manufacturer URL": "http://www.buick.com/index.htm",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 121341990001,
+    "Image": "00121341990001",
     "Details": "Buick Park Avenue",
     "Car URL": 54
   },
@@ -373,7 +373,7 @@
     "Manufacturer URL": "http://www.buick.com/index.htm",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 121321990001,
+    "Image": "00121321990001",
     "Details": "Buick Regal",
     "Car URL": 207
   },
@@ -394,7 +394,7 @@
     "Manufacturer URL": "http://www.cadillac.com/index.html",
     "Basic Warranty - Years": 4,
     "Basic Warranty - Miles": 50000,
-    "Image": 122281990008,
+    "Image": "00122281990008",
     "Details": "Cadillac Catera",
     "Car URL": 71
   },
@@ -415,7 +415,7 @@
     "Manufacturer URL": "http://www.cadillac.com/index.html",
     "Basic Warranty - Years": 4,
     "Basic Warranty - Miles": 50000,
-    "Image": 122261990018,
+    "Image": "00122261990018",
     "Details": "Cadillac DeVille",
     "Car URL": 379
   },
@@ -436,7 +436,7 @@
     "Manufacturer URL": "http://www.cadillac.com/index.html",
     "Basic Warranty - Years": 4,
     "Basic Warranty - Miles": 50000,
-    "Image": 122221990001,
+    "Image": "00122221990001",
     "Details": "Cadillac Eldorado",
     "Car URL": 38
   },
@@ -457,7 +457,7 @@
     "Manufacturer URL": "http://www.cadillac.com/index.html",
     "Basic Warranty - Years": 4,
     "Basic Warranty - Miles": 50000,
-    "Image": 122001990005,
+    "Image": "00122001990005",
     "Details": "Cadillac Escalade",
     "Car URL": 337
   },
@@ -478,7 +478,7 @@
     "Manufacturer URL": "http://www.cadillac.com/index.html",
     "Basic Warranty - Years": 4,
     "Basic Warranty - Miles": 50000,
-    "Image": 122231990001,
+    "Image": "00122231990001",
     "Details": "Cadillac Seville",
     "Car URL": 275
   },
@@ -499,7 +499,7 @@
     "Manufacturer URL": "http://www.chevrolet.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 124991990002,
+    "Image": "00124991990002",
     "Details": "Chevrolet Astro",
     "Car URL": 36
   },
@@ -520,7 +520,7 @@
     "Manufacturer URL": "http://www.chevrolet.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 124191990005,
+    "Image": "00124191990005",
     "Details": "Chevrolet Blazer",
     "Car URL": 35
   },
@@ -541,7 +541,7 @@
     "Manufacturer URL": "http://www.chevrolet.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 124991990017,
+    "Image": "00124991990017",
     "Details": "Chevrolet C/K 2500/3500",
     "Car URL": 136
   },
@@ -562,7 +562,7 @@
     "Manufacturer URL": "http://www.chevrolet.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 123991990006,
+    "Image": "00123991990006",
     "Details": "Chevrolet Camaro",
     "Car URL": 74
   },
@@ -583,7 +583,7 @@
     "Manufacturer URL": "http://www.chevrolet.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 123991990008,
+    "Image": "00123991990008",
     "Details": "Chevrolet Cavalier",
     "Car URL": 72
   },
@@ -604,7 +604,7 @@
     "Manufacturer URL": "http://www.chevrolet.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 123991990005,
+    "Image": "00123991990005",
     "Details": "Chevrolet Corvette",
     "Car URL": 316
   },
@@ -625,7 +625,7 @@
     "Manufacturer URL": "http://www.chevrolet.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 124991990019,
+    "Image": "00124991990019",
     "Details": "Chevrolet Express",
     "Car URL": 334
   },
@@ -646,7 +646,7 @@
     "Manufacturer URL": "http://www.chevrolet.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 123201990001,
+    "Image": "00123201990001",
     "Details": "Chevrolet Impala",
     "Car URL": 363
   },
@@ -667,7 +667,7 @@
     "Manufacturer URL": "http://www.chevrolet.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 123991990011,
+    "Image": "00123991990011",
     "Details": "Chevrolet Lumina",
     "Car URL": 83
   },
@@ -688,7 +688,7 @@
     "Manufacturer URL": "http://www.chevrolet.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 123991990014,
+    "Image": "00123991990014",
     "Details": "Chevrolet Malibu",
     "Car URL": 140
   },
@@ -709,7 +709,7 @@
     "Manufacturer URL": "http://www.chevrolet.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 123991990015,
+    "Image": "00123991990015",
     "Details": "Chevrolet Metro",
     "Car URL": 30
   },
@@ -730,7 +730,7 @@
     "Manufacturer URL": "http://www.chevrolet.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 123261990001,
+    "Image": "00123261990001",
     "Details": "Chevrolet Monte Carlo",
     "Car URL": 360
   },
@@ -751,7 +751,7 @@
     "Manufacturer URL": "http://www.chevrolet.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 123991990001,
+    "Image": "00123991990001",
     "Details": "Chevrolet Prizm",
     "Car URL": 274
   },
@@ -772,7 +772,7 @@
     "Manufacturer URL": "http://www.chevrolet.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 124991990006,
+    "Image": "00124991990006",
     "Details": "Chevrolet S-10",
     "Car URL": 82
   },
@@ -793,7 +793,7 @@
     "Manufacturer URL": "http://www.chevrolet.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 124991990009,
+    "Image": "00124991990009",
     "Details": "Chevrolet Silverado 1500",
     "Car URL": 305
   },
@@ -814,7 +814,7 @@
     "Manufacturer URL": "http://www.chevrolet.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 124991990008,
+    "Image": "00124991990008",
     "Details": "Chevrolet Silverado 2500",
     "Car URL": 346
   },
@@ -835,7 +835,7 @@
     "Manufacturer URL": "http://www.chevrolet.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 124151990028,
+    "Image": "00124151990028",
     "Details": "Chevrolet Tahoe Limited and Z71",
     "Car URL": 391
   },
@@ -856,7 +856,7 @@
     "Manufacturer URL": "http://www.chevrolet.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 124151990008,
+    "Image": "00124151990008",
     "Details": "Chevrolet Tahoe and Suburban",
     "Car URL": 80
   },
@@ -877,7 +877,7 @@
     "Manufacturer URL": "http://www.chevrolet.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 124991990013,
+    "Image": "00124991990013",
     "Details": "Chevrolet Tracker",
     "Car URL": 312
   },
@@ -898,7 +898,7 @@
     "Manufacturer URL": "http://www.chevrolet.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 124991990015,
+    "Image": "00124991990015",
     "Details": "Chevrolet Venture",
     "Car URL": 79
   },
@@ -940,7 +940,7 @@
     "Manufacturer URL": "http://www.chryslercorp.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 101991990003,
+    "Image": "00101991990003",
     "Details": "Chrysler Concorde",
     "Car URL": 276
   },
@@ -961,7 +961,7 @@
     "Manufacturer URL": "http://www.chryslercorp.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 101991990005,
+    "Image": "00101991990005",
     "Details": "Chrysler LHS and 300M",
     "Car URL": 301
   },
@@ -982,7 +982,7 @@
     "Manufacturer URL": "http://www.chryslercorp.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 101991990006,
+    "Image": "00101991990006",
     "Details": "Chrysler Sebring",
     "Car URL": 267
   },
@@ -1003,7 +1003,7 @@
     "Manufacturer URL": "http://www.chryslercorp.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 101991990009,
+    "Image": "00101991990009",
     "Details": "Chrysler Town & Country",
     "Car URL": 24
   },
@@ -1045,7 +1045,7 @@
     "Manufacturer URL": "",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 813021990001,
+    "Image": "00813021990001",
     "Details": "Daewoo Lanos",
     "Car URL": 340
   },
@@ -1066,7 +1066,7 @@
     "Manufacturer URL": "http://www.4adodge.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 103991990001,
+    "Image": "00103991990001",
     "Details": "Dodge Avenger",
     "Car URL": 23
   },
@@ -1087,7 +1087,7 @@
     "Manufacturer URL": "http://www.4adodge.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 103991990002,
+    "Image": "00103991990002",
     "Details": "Dodge Caravan",
     "Car URL": 22
   },
@@ -1108,7 +1108,7 @@
     "Manufacturer URL": "http://www.4adodge.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 104091990007,
+    "Image": "00104091990007",
     "Details": "Dodge Dakota",
     "Car URL": 21
   },
@@ -1129,7 +1129,7 @@
     "Manufacturer URL": "http://www.4adodge.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 104991990004,
+    "Image": "00104991990004",
     "Details": "Dodge Durango",
     "Car URL": 243
   },
@@ -1150,7 +1150,7 @@
     "Manufacturer URL": "http://www.4adodge.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 103991990003,
+    "Image": "00103991990003",
     "Details": "Dodge Intrepid",
     "Car URL": 273
   },
@@ -1171,7 +1171,7 @@
     "Manufacturer URL": "http://www.4adodge.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 104991990005,
+    "Image": "00104991990005",
     "Details": "Dodge Ram 1500",
     "Car URL": 141
   },
@@ -1192,7 +1192,7 @@
     "Manufacturer URL": "http://www.4adodge.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 104991990007,
+    "Image": "00104991990007",
     "Details": "Dodge Ram 2500/3500",
     "Car URL": 142
   },
@@ -1213,7 +1213,7 @@
     "Manufacturer URL": "http://www.4adodge.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 104991990008,
+    "Image": "00104991990008",
     "Details": "Dodge Ram Van/Wagon",
     "Car URL": 239
   },
@@ -1234,7 +1234,7 @@
     "Manufacturer URL": "http://www.4adodge.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 103441990001,
+    "Image": "00103441990001",
     "Details": "Dodge Stratus",
     "Car URL": 18
   },
@@ -1250,7 +1250,7 @@
     "Horse Power": 450,
     "Wheel Base": 96.2,
     "Length": 176.2,
-    "Front Head Room": null,
+    "Front Head Room": "",
     "Front Leg Room": 42.6,
     "Manufacturer URL": "http://www.4adodge.com/",
     "Basic Warranty - Years": 3,
@@ -1276,7 +1276,7 @@
     "Manufacturer URL": "",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 108991990001,
+    "Image": "00108991990001",
     "Details": "Dodge/Plymouth Neon",
     "Car URL": 19
   },
@@ -1297,7 +1297,7 @@
     "Manufacturer URL": "http://www.fordvehicles.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 113321990001,
+    "Image": "00113321990001",
     "Details": "Ford Contour",
     "Car URL": 68
   },
@@ -1318,7 +1318,7 @@
     "Manufacturer URL": "http://www.fordvehicles.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 113351990003,
+    "Image": "00113351990003",
     "Details": "Ford Crown Victoria",
     "Car URL": 67
   },
@@ -1360,7 +1360,7 @@
     "Manufacturer URL": "http://www.fordvehicles.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 113001990001,
+    "Image": "00113001990001",
     "Details": "Ford Escort/ZX2",
     "Car URL": 283
   },
@@ -1381,7 +1381,7 @@
     "Manufacturer URL": "http://www.fordvehicles.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 114051990002,
+    "Image": "00114051990002",
     "Details": "Ford Excursion",
     "Car URL": 370
   },
@@ -1402,7 +1402,7 @@
     "Manufacturer URL": "http://www.fordvehicles.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 114051990006,
+    "Image": "00114051990006",
     "Details": "Ford Expedition",
     "Car URL": 65
   },
@@ -1423,7 +1423,7 @@
     "Manufacturer URL": "http://www.fordvehicles.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 114071990001,
+    "Image": "00114071990001",
     "Details": "Ford Explorer",
     "Car URL": 64
   },
@@ -1444,7 +1444,7 @@
     "Manufacturer URL": "http://www.fordvehicles.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 114051990009,
+    "Image": "00114051990009",
     "Details": "Ford F-150",
     "Car URL": 222
   },
@@ -1465,7 +1465,7 @@
     "Manufacturer URL": "http://www.fordvehicles.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 114051990011,
+    "Image": "00114051990011",
     "Details": "Ford F-250/350 Super Duty",
     "Car URL": 223
   },
@@ -1486,7 +1486,7 @@
     "Manufacturer URL": "http://www.fordvehicles.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 113311990018,
+    "Image": "00113311990018",
     "Details": "Ford Focus",
     "Car URL": 364
   },
@@ -1507,7 +1507,7 @@
     "Manufacturer URL": "http://www.fordvehicles.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 113221990001,
+    "Image": "00113221990001",
     "Details": "Ford Mustang",
     "Car URL": 63
   },
@@ -1528,7 +1528,7 @@
     "Manufacturer URL": "http://www.fordvehicles.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 114071990003,
+    "Image": "00114071990003",
     "Details": "Ford Ranger",
     "Car URL": 61
   },
@@ -1549,7 +1549,7 @@
     "Manufacturer URL": "http://www.fordvehicles.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 113331990004,
+    "Image": "00113331990004",
     "Details": "Ford Taurus",
     "Car URL": 377
   },
@@ -1570,7 +1570,7 @@
     "Manufacturer URL": "http://www.fordvehicles.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 114101990001,
+    "Image": "00114101990001",
     "Details": "Ford Windstar",
     "Car URL": 32
   },
@@ -1591,7 +1591,7 @@
     "Manufacturer URL": "http://www.gm.com/cgi-bin/product/division.cgi?gmc",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 126991990002,
+    "Image": "00126991990002",
     "Details": "GMC Jimmy/Envoy",
     "Car URL": 27
   },
@@ -1612,7 +1612,7 @@
     "Manufacturer URL": "http://www.gm.com/cgi-bin/product/division.cgi?gmc",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 126991990009,
+    "Image": "00126991990009",
     "Details": "GMC Safari",
     "Car URL": 26
   },
@@ -1633,7 +1633,7 @@
     "Manufacturer URL": "http://www.gm.com/cgi-bin/product/division.cgi?gmc",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 126991990011,
+    "Image": "00126991990011",
     "Details": "GMC Savana",
     "Car URL": 240
   },
@@ -1717,7 +1717,7 @@
     "Manufacturer URL": "http://www.gm.com/cgi-bin/product/division.cgi?gmc",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 126991990015,
+    "Image": "00126991990015",
     "Details": "GMC Sonoma",
     "Car URL": 25
   },
@@ -1738,7 +1738,7 @@
     "Manufacturer URL": "http://www.gm.com/cgi-bin/product/division.cgi?gmc",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 126111990058,
+    "Image": "00126111990058",
     "Details": "GMC Yukon Denali",
     "Car URL": 387
   },
@@ -1759,7 +1759,7 @@
     "Manufacturer URL": "http://www.gm.com/cgi-bin/product/division.cgi?gmc",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 126991990008,
+    "Image": "00126991990008",
     "Details": "GMC Yukon and Yukon XL",
     "Car URL": 94
   },
@@ -1780,7 +1780,7 @@
     "Manufacturer URL": "http://www.honda.com/index.html",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 802041990002,
+    "Image": "00802041990002",
     "Details": "Honda Accord",
     "Car URL": 93
   },
@@ -1801,7 +1801,7 @@
     "Manufacturer URL": "http://www.honda.com/index.html",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 802071990003,
+    "Image": "00802071990003",
     "Details": "Honda CR-V",
     "Car URL": 91
   },
@@ -1822,7 +1822,7 @@
     "Manufacturer URL": "http://www.honda.com/index.html",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 802031990003,
+    "Image": "00802031990003",
     "Details": "Honda Civic",
     "Car URL": 92
   },
@@ -1843,7 +1843,7 @@
     "Manufacturer URL": "http://www.honda.com/index.html",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 802001990003,
+    "Image": "00802001990003",
     "Details": "Honda Insight",
     "Car URL": 393
   },
@@ -1864,7 +1864,7 @@
     "Manufacturer URL": "http://www.honda.com/index.html",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 802061990001,
+    "Image": "00802061990001",
     "Details": "Honda Odyssey",
     "Car URL": 323
   },
@@ -1885,7 +1885,7 @@
     "Manufacturer URL": "http://www.honda.com/index.html",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 802051990001,
+    "Image": "00802051990001",
     "Details": "Honda Passport",
     "Car URL": 88
   },
@@ -1906,7 +1906,7 @@
     "Manufacturer URL": "http://www.honda.com/index.html",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 802041990003,
+    "Image": "00802041990003",
     "Details": "Honda Prelude",
     "Car URL": 87
   },
@@ -1927,7 +1927,7 @@
     "Manufacturer URL": "http://www.honda.com/index.html",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 802081990001,
+    "Image": "00802081990001",
     "Details": "Honda S2000",
     "Car URL": 357
   },
@@ -1948,7 +1948,7 @@
     "Manufacturer URL": "http://www.hmaservice.com/",
     "Basic Warranty - Years": 5,
     "Basic Warranty - Miles": 60000,
-    "Image": 803011990001,
+    "Image": "00803011990001",
     "Details": "Hyundai Accent",
     "Car URL": 86
   },
@@ -1969,7 +1969,7 @@
     "Manufacturer URL": "http://www.hmaservice.com/",
     "Basic Warranty - Years": 5,
     "Basic Warranty - Miles": 60000,
-    "Image": 803041990002,
+    "Image": "00803041990002",
     "Details": "Hyundai Elantra",
     "Car URL": 85
   },
@@ -2011,7 +2011,7 @@
     "Manufacturer URL": "http://www.hmaservice.com/",
     "Basic Warranty - Years": 5,
     "Basic Warranty - Miles": 60000,
-    "Image": 803051990001,
+    "Image": "00803051990001",
     "Details": "Hyundai Tiburon",
     "Car URL": 49
   },
@@ -2032,7 +2032,7 @@
     "Manufacturer URL": "http://www.infinitimotors.com/",
     "Basic Warranty - Years": 4,
     "Basic Warranty - Miles": 60000,
-    "Image": 804031990001,
+    "Image": "00804031990001",
     "Details": "Infiniti G20",
     "Car URL": 306
   },
@@ -2053,7 +2053,7 @@
     "Manufacturer URL": "http://www.infinitimotors.com/",
     "Basic Warranty - Years": 4,
     "Basic Warranty - Miles": 60000,
-    "Image": 804051990001,
+    "Image": "00804051990001",
     "Details": "Infiniti I30",
     "Car URL": 371
   },
@@ -2074,7 +2074,7 @@
     "Manufacturer URL": "http://www.infinitimotors.com/",
     "Basic Warranty - Years": 4,
     "Basic Warranty - Miles": 60000,
-    "Image": 804021990002,
+    "Image": "00804021990002",
     "Details": "Infiniti Q45",
     "Car URL": 46
   },
@@ -2095,7 +2095,7 @@
     "Manufacturer URL": "http://www.infinitimotors.com/",
     "Basic Warranty - Years": 4,
     "Basic Warranty - Miles": 60000,
-    "Image": 804061990001,
+    "Image": "00804061990001",
     "Details": "Infiniti QX4",
     "Car URL": 146
   },
@@ -2221,7 +2221,7 @@
     "Manufacturer URL": "http://www.jaguarcars.com/",
     "Basic Warranty - Years": 4,
     "Basic Warranty - Miles": 50000,
-    "Image": 407111990019,
+    "Image": "00407111990019",
     "Details": "Jaguar S-Type",
     "Car URL": 351
   },
@@ -2284,7 +2284,7 @@
     "Manufacturer URL": "http://www.jeepunpaved.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 107991990001,
+    "Image": "00107991990001",
     "Details": "Jeep Cherokee",
     "Car URL": 40
   },
@@ -2305,7 +2305,7 @@
     "Manufacturer URL": "http://www.jeepunpaved.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 107991990003,
+    "Image": "00107991990003",
     "Details": "Jeep Grand Cherokee",
     "Car URL": 327
   },
@@ -2326,7 +2326,7 @@
     "Manufacturer URL": "http://www.jeepunpaved.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 107991990005,
+    "Image": "00107991990005",
     "Details": "Jeep Wrangler",
     "Car URL": 104
   },
@@ -2347,7 +2347,7 @@
     "Manufacturer URL": "http://www.kia.co.kr",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 832011990003,
+    "Image": "00832011990003",
     "Details": "Kia Sephia",
     "Car URL": 103
   },
@@ -2368,7 +2368,7 @@
     "Manufacturer URL": "http://www.kia.co.kr",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 832021990004,
+    "Image": "00832021990004",
     "Details": "Kia Sportage",
     "Car URL": 102
   },
@@ -2410,7 +2410,7 @@
     "Manufacturer URL": "http://www.landrover.com",
     "Basic Warranty - Years": 4,
     "Basic Warranty - Miles": 50000,
-    "Image": 409041990002,
+    "Image": "00409041990002",
     "Details": "Land Rover Range Rover",
     "Car URL": 114
   },
@@ -2431,7 +2431,7 @@
     "Manufacturer URL": "http://www.lexus.com",
     "Basic Warranty - Years": 4,
     "Basic Warranty - Miles": 50000,
-    "Image": 806051990001,
+    "Image": "00806051990001",
     "Details": "Lexus ES 300",
     "Car URL": 101
   },
@@ -2452,7 +2452,7 @@
     "Manufacturer URL": "http://www.lexus.com",
     "Basic Warranty - Years": 4,
     "Basic Warranty - Miles": 50000,
-    "Image": 806031990001,
+    "Image": "00806031990001",
     "Details": "Lexus GS 300/400",
     "Car URL": 100
   },
@@ -2473,7 +2473,7 @@
     "Manufacturer URL": "http://www.lexus.com",
     "Basic Warranty - Years": 4,
     "Basic Warranty - Miles": 50000,
-    "Image": 806011990001,
+    "Image": "00806011990001",
     "Details": "Lexus LS 400",
     "Car URL": 99
   },
@@ -2494,7 +2494,7 @@
     "Manufacturer URL": "http://www.lexus.com",
     "Basic Warranty - Years": 4,
     "Basic Warranty - Miles": 50000,
-    "Image": 806091990001,
+    "Image": "00806091990001",
     "Details": "Lexus LX 470",
     "Car URL": 98
   },
@@ -2515,7 +2515,7 @@
     "Manufacturer URL": "http://www.lexus.com",
     "Basic Warranty - Years": 4,
     "Basic Warranty - Miles": 50000,
-    "Image": 806081990001,
+    "Image": "00806081990001",
     "Details": "Lexus RX 300",
     "Car URL": 266
   },
@@ -2536,7 +2536,7 @@
     "Manufacturer URL": "http://www.lexus.com",
     "Basic Warranty - Years": 4,
     "Basic Warranty - Miles": 50000,
-    "Image": 806041990001,
+    "Image": "00806041990001",
     "Details": "Lexus SC 300/400",
     "Car URL": 97
   },
@@ -2557,7 +2557,7 @@
     "Manufacturer URL": "http://www.lincolnvehicles.com/",
     "Basic Warranty - Years": 4,
     "Basic Warranty - Miles": 50000,
-    "Image": 115171990001,
+    "Image": "00115171990001",
     "Details": "Lincoln Continental",
     "Car URL": 96
   },
@@ -2578,7 +2578,7 @@
     "Manufacturer URL": "http://www.lincolnvehicles.com/",
     "Basic Warranty - Years": 4,
     "Basic Warranty - Miles": 50000,
-    "Image": 115201990005,
+    "Image": "00115201990005",
     "Details": "Lincoln LS",
     "Car URL": 358
   },
@@ -2620,13 +2620,13 @@
     "Manufacturer URL": "http://www.lincolnvehicles.com/",
     "Basic Warranty - Years": 4,
     "Basic Warranty - Miles": 50000,
-    "Image": 115141990001,
+    "Image": "00115141990001",
     "Details": "Lincoln Town Car",
     "Car URL": 147
   },
   {
     "Make": "Mazda",
-    "Model": "626",
+    "Model": 626,
     "Consumer Guide Recommendation": "Best Buy",
     "CLASS": "compact car",
     "Low Price": 18245,
@@ -2641,7 +2641,7 @@
     "Manufacturer URL": "http://www.mazdausa.com//premazda.htm",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 50000,
-    "Image": 807061990001,
+    "Image": "00807061990001",
     "Details": "Mazda 626",
     "Car URL": 148
   },
@@ -2662,7 +2662,7 @@
     "Manufacturer URL": "http://www.mazdausa.com//premazda.htm",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 50000,
-    "Image": 807151990002,
+    "Image": "00807151990002",
     "Details": "Mazda B-Series",
     "Car URL": 250
   },
@@ -2683,7 +2683,7 @@
     "Manufacturer URL": "http://www.mazdausa.com//premazda.htm",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 50000,
-    "Image": 807121990001,
+    "Image": "00807121990001",
     "Details": "Mazda MPV",
     "Car URL": 369
   },
@@ -2704,7 +2704,7 @@
     "Manufacturer URL": "http://www.mazdausa.com//premazda.htm",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 50000,
-    "Image": 807091990009,
+    "Image": "00807091990009",
     "Details": "Mazda Miata",
     "Car URL": 149
   },
@@ -2725,7 +2725,7 @@
     "Manufacturer URL": "http://www.mazdausa.com//premazda.htm",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 50000,
-    "Image": 807131990001,
+    "Image": "00807131990001",
     "Details": "Mazda Millenia",
     "Car URL": 150
   },
@@ -2746,7 +2746,7 @@
     "Manufacturer URL": "http://www.mazdausa.com//premazda.htm",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 50000,
-    "Image": 807071990001,
+    "Image": "00807071990001",
     "Details": "Mazda Protege",
     "Car URL": 153
   },
@@ -2788,7 +2788,7 @@
     "Manufacturer URL": "http://www.mercedes-benz.com/",
     "Basic Warranty - Years": 4,
     "Basic Warranty - Miles": 50000,
-    "Image": 603251990009,
+    "Image": "00603251990009",
     "Details": "Mercedes-Benz CLK",
     "Car URL": 348
   },
@@ -2809,7 +2809,7 @@
     "Manufacturer URL": "http://www.mercedes-benz.com/",
     "Basic Warranty - Years": 4,
     "Basic Warranty - Miles": 50000,
-    "Image": 603201990001,
+    "Image": "00603201990001",
     "Details": "Mercedes-Benz E-Class",
     "Car URL": 156
   },
@@ -2830,7 +2830,7 @@
     "Manufacturer URL": "http://www.mercedes-benz.com/",
     "Basic Warranty - Years": 4,
     "Basic Warranty - Miles": 50000,
-    "Image": 603261990021,
+    "Image": "00603261990021",
     "Details": "Mercedes-Benz M-Class",
     "Car URL": 244
   },
@@ -2851,7 +2851,7 @@
     "Manufacturer URL": "http://www.mercedes-benz.com/",
     "Basic Warranty - Years": 4,
     "Basic Warranty - Miles": 50000,
-    "Image": 603251990006,
+    "Image": "00603251990006",
     "Details": "Mercedes-Benz S-Class/CL500",
     "Car URL": 355
   },
@@ -2872,7 +2872,7 @@
     "Manufacturer URL": "http://www.mercedes-benz.com/",
     "Basic Warranty - Years": 4,
     "Basic Warranty - Miles": 50000,
-    "Image": 603251990011,
+    "Image": "00603251990011",
     "Details": "Mercedes-Benz SL-Class",
     "Car URL": 158
   },
@@ -2893,7 +2893,7 @@
     "Manufacturer URL": "http://www.mercedes-benz.com/",
     "Basic Warranty - Years": 4,
     "Basic Warranty - Miles": 50000,
-    "Image": 603251990014,
+    "Image": "00603251990014",
     "Details": "Mercedes-Benz SLK230",
     "Car URL": 154
   },
@@ -2914,7 +2914,7 @@
     "Manufacturer URL": "http://www.mercuryvehicles.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 161091990002,
+    "Image": "00161091990002",
     "Details": "Mercury Cougar",
     "Car URL": 300
   },
@@ -2977,7 +2977,7 @@
     "Manufacturer URL": "http://www.mercuryvehicles.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 161231990001,
+    "Image": "00161231990001",
     "Details": "Mercury Mystique",
     "Car URL": 162
   },
@@ -2998,7 +2998,7 @@
     "Manufacturer URL": "http://www.mercuryvehicles.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 161201990001,
+    "Image": "00161201990001",
     "Details": "Mercury Sable",
     "Car URL": 378
   },
@@ -3019,7 +3019,7 @@
     "Manufacturer URL": "http://www.mercuryvehicles.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 161221990002,
+    "Image": "00161221990002",
     "Details": "Mercury Villager",
     "Car URL": 317
   },
@@ -3061,7 +3061,7 @@
     "Manufacturer URL": "http://www.mitsucars.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 808091990003,
+    "Image": "00808091990003",
     "Details": "Mitsubishi Eclipse",
     "Car URL": 372
   },
@@ -3145,7 +3145,7 @@
     "Manufacturer URL": "http://www.mitsucars.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 808081990003,
+    "Image": "00808081990003",
     "Details": "Mitsubishi Montero Sport",
     "Car URL": 374
   },
@@ -3166,7 +3166,7 @@
     "Manufacturer URL": "http://www.nissanmotors.com/1997/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 809181990005,
+    "Image": "00809181990005",
     "Details": "Nissan Altima",
     "Car URL": 261
   },
@@ -3187,7 +3187,7 @@
     "Manufacturer URL": "http://www.nissanmotors.com/1997/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 809151990014,
+    "Image": "00809151990014",
     "Details": "Nissan Frontier",
     "Car URL": 278
   },
@@ -3208,7 +3208,7 @@
     "Manufacturer URL": "http://www.nissanmotors.com/1997/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 809111990001,
+    "Image": "00809111990001",
     "Details": "Nissan Maxima",
     "Car URL": 362
   },
@@ -3229,7 +3229,7 @@
     "Manufacturer URL": "http://www.nissanmotors.com/1997/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 809141990032,
+    "Image": "00809141990032",
     "Details": "Nissan Pathfinder",
     "Car URL": 176
   },
@@ -3250,7 +3250,7 @@
     "Manufacturer URL": "http://www.nissanmotors.com/1997/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 809201990002,
+    "Image": "00809201990002",
     "Details": "Nissan Quest",
     "Car URL": 328
   },
@@ -3292,7 +3292,7 @@
     "Manufacturer URL": "http://www.nissanmotors.com/1997/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 809141990001,
+    "Image": "00809141990001",
     "Details": "Nissan Xterra",
     "Car URL": 361
   },
@@ -3313,7 +3313,7 @@
     "Manufacturer URL": "http://www.oldsmobile.com/cgi-bin/index.cgi",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 128991990002,
+    "Image": "00128991990002",
     "Details": "Oldsmobile Alero",
     "Car URL": 293
   },
@@ -3334,7 +3334,7 @@
     "Manufacturer URL": "http://www.oldsmobile.com/cgi-bin/index.cgi",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 128991990005,
+    "Image": "00128991990005",
     "Details": "Oldsmobile Bravada",
     "Car URL": 181
   },
@@ -3355,7 +3355,7 @@
     "Manufacturer URL": "http://www.oldsmobile.com/cgi-bin/index.cgi",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 128991990003,
+    "Image": "00128991990003",
     "Details": "Oldsmobile Intrigue",
     "Car URL": 212
   },
@@ -3376,7 +3376,7 @@
     "Manufacturer URL": "http://www.oldsmobile.com/cgi-bin/index.cgi",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 128991990007,
+    "Image": "00128991990007",
     "Details": "Oldsmobile Silhouette",
     "Car URL": 185
   },
@@ -3397,7 +3397,7 @@
     "Manufacturer URL": "http://www.plymouthcars.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 108331990001,
+    "Image": "00108331990001",
     "Details": "Plymouth Breeze",
     "Car URL": 186
   },
@@ -3439,7 +3439,7 @@
     "Manufacturer URL": "http://www.pontiac.com/cgi-bin/pontiac_entry.pl",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 129261990011,
+    "Image": "00129261990011",
     "Details": "Pontiac Bonneville",
     "Car URL": 365
   },
@@ -3460,7 +3460,7 @@
     "Manufacturer URL": "http://www.pontiac.com/cgi-bin/pontiac_entry.pl",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 129991990004,
+    "Image": "00129991990004",
     "Details": "Pontiac Firebird",
     "Car URL": 130
   },
@@ -3502,7 +3502,7 @@
     "Manufacturer URL": "http://www.pontiac.com/cgi-bin/pontiac_entry.pl",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 129991990005,
+    "Image": "00129991990005",
     "Details": "Pontiac Grand Prix",
     "Car URL": 128
   },
@@ -3523,7 +3523,7 @@
     "Manufacturer URL": "http://www.pontiac.com/cgi-bin/pontiac_entry.pl",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 129991990001,
+    "Image": "00129991990001",
     "Details": "Pontiac Montana",
     "Car URL": 213
   },
@@ -3544,13 +3544,13 @@
     "Manufacturer URL": "http://www.pontiac.com/cgi-bin/pontiac_entry.pl",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 129221990002,
+    "Image": "00129221990002",
     "Details": "Pontiac Sunfire",
     "Car URL": 127
   },
   {
     "Make": "Porsche",
-    "Model": "911",
+    "Model": 911,
     "Consumer Guide Recommendation": "",
     "CLASS": "sports and GT car",
     "Low Price": 65590,
@@ -3565,7 +3565,7 @@
     "Manufacturer URL": "http://www.porsche-usa.com/",
     "Basic Warranty - Years": 4,
     "Basic Warranty - Miles": 50000,
-    "Image": 605021990001,
+    "Image": "00605021990001",
     "Details": "Porsche 911",
     "Car URL": 294
   },
@@ -3586,7 +3586,7 @@
     "Manufacturer URL": "http://www.porsche-usa.com/",
     "Basic Warranty - Years": 4,
     "Basic Warranty - Miles": 50000,
-    "Image": 605061990001,
+    "Image": "00605061990001",
     "Details": "Porsche Boxster",
     "Car URL": 319
   },
@@ -3607,7 +3607,7 @@
     "Manufacturer URL": "http://www.saabusa.com/",
     "Basic Warranty - Years": 4,
     "Basic Warranty - Miles": 50000,
-    "Image": 903071990004,
+    "Image": "00903071990004",
     "Details": "Saab 9-3",
     "Car URL": 296
   },
@@ -3628,7 +3628,7 @@
     "Manufacturer URL": "http://www.saabusa.com/",
     "Basic Warranty - Years": 4,
     "Basic Warranty - Miles": 50000,
-    "Image": 903061990001,
+    "Image": "00903061990001",
     "Details": "Saab 9-5",
     "Car URL": 269
   },
@@ -3649,7 +3649,7 @@
     "Manufacturer URL": "http://www.saturncars.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 130021990001,
+    "Image": "00130021990001",
     "Details": "Saturn L-Series",
     "Car URL": 375
   },
@@ -3670,7 +3670,7 @@
     "Manufacturer URL": "http://www.saturncars.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 130021990004,
+    "Image": "00130021990004",
     "Details": "Saturn S-Series",
     "Car URL": 382
   },
@@ -3691,7 +3691,7 @@
     "Manufacturer URL": "http://www.subaru.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 810101990002,
+    "Image": "00810101990002",
     "Details": "Subaru Forester",
     "Car URL": 245
   },
@@ -3712,7 +3712,7 @@
     "Manufacturer URL": "http://www.subaru.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 810061990004,
+    "Image": "00810061990004",
     "Details": "Subaru Impreza",
     "Car URL": 252
   },
@@ -3733,7 +3733,7 @@
     "Manufacturer URL": "http://www.subaru.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 810071990001,
+    "Image": "00810071990001",
     "Details": "Subaru Legacy",
     "Car URL": 380
   },
@@ -3754,7 +3754,7 @@
     "Manufacturer URL": "http://www.subaru.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 810061990001,
+    "Image": "00810061990001",
     "Details": "Subaru Outback",
     "Car URL": 381
   },
@@ -3775,7 +3775,7 @@
     "Manufacturer URL": "http://www.suzuki.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 811021990001,
+    "Image": "00811021990001",
     "Details": "Suzuki Esteem/Swift",
     "Car URL": 279
   },
@@ -3796,7 +3796,7 @@
     "Manufacturer URL": "http://www.suzuki.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 811041990003,
+    "Image": "00811041990003",
     "Details": "Suzuki Vitara",
     "Car URL": 308
   },
@@ -3817,7 +3817,7 @@
     "Manufacturer URL": "http://www.toyota.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 812161990028,
+    "Image": "00812161990028",
     "Details": "Toyota 4Runner",
     "Car URL": 123
   },
@@ -3838,7 +3838,7 @@
     "Manufacturer URL": "http://www.toyota.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 812121990002,
+    "Image": "00812121990002",
     "Details": "Toyota Avalon",
     "Car URL": 384
   },
@@ -3859,7 +3859,7 @@
     "Manufacturer URL": "http://www.toyota.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 812081990003,
+    "Image": "00812081990003",
     "Details": "Toyota Camry/Solara",
     "Car URL": 121
   },
@@ -3880,7 +3880,7 @@
     "Manufacturer URL": "http://www.toyota.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 812061990001,
+    "Image": "00812061990001",
     "Details": "Toyota Celica",
     "Car URL": 385
   },
@@ -3901,7 +3901,7 @@
     "Manufacturer URL": "http://www.toyota.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 812041990001,
+    "Image": "00812041990001",
     "Details": "Toyota Corolla",
     "Car URL": 119
   },
@@ -3922,7 +3922,7 @@
     "Manufacturer URL": "http://www.toyota.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 812071990001,
+    "Image": "00812071990001",
     "Details": "Toyota Echo",
     "Car URL": 383
   },
@@ -3943,7 +3943,7 @@
     "Manufacturer URL": "http://www.toyota.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 812131990001,
+    "Image": "00812131990001",
     "Details": "Toyota Land Cruiser",
     "Car URL": 118
   },
@@ -3964,7 +3964,7 @@
     "Manufacturer URL": "http://www.toyota.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 812181990001,
+    "Image": "00812181990001",
     "Details": "Toyota RAV4",
     "Car URL": 115
   },
@@ -3985,7 +3985,7 @@
     "Manufacturer URL": "http://www.toyota.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 812141990001,
+    "Image": "00812141990001",
     "Details": "Toyota Sienna",
     "Car URL": 236
   },
@@ -4006,7 +4006,7 @@
     "Manufacturer URL": "http://www.toyota.com/",
     "Basic Warranty - Years": 3,
     "Basic Warranty - Miles": 36000,
-    "Image": 812161990027,
+    "Image": "00812161990027",
     "Details": "Toyota Tacoma",
     "Car URL": 247
   },
@@ -4069,7 +4069,7 @@
     "Manufacturer URL": "http://www.vw.com",
     "Basic Warranty - Years": 2,
     "Basic Warranty - Miles": 24000,
-    "Image": 606031990001,
+    "Image": "00606031990001",
     "Details": "Volkswagen EuroVan",
     "Car URL": 345
   },
@@ -4090,7 +4090,7 @@
     "Manufacturer URL": "http://www.vw.com",
     "Basic Warranty - Years": 2,
     "Basic Warranty - Miles": 24000,
-    "Image": 606091990002,
+    "Image": "00606091990002",
     "Details": "Volkswagen Jetta/Golf",
     "Car URL": 350
   },
@@ -4111,7 +4111,7 @@
     "Manufacturer URL": "http://www.vw.com",
     "Basic Warranty - Years": 2,
     "Basic Warranty - Miles": 24000,
-    "Image": 606141990002,
+    "Image": "00606141990002",
     "Details": "Volkswagen New Beetle",
     "Car URL": 272
   },
@@ -4153,7 +4153,7 @@
     "Manufacturer URL": "http://www.volvocars.com/",
     "Basic Warranty - Years": 4,
     "Basic Warranty - Miles": 50000,
-    "Image": 904991990004,
+    "Image": "00904991990004",
     "Details": "Volvo 40 series",
     "Car URL": 388
   },
@@ -4174,7 +4174,7 @@
     "Manufacturer URL": "http://www.volvocars.com/",
     "Basic Warranty - Years": 4,
     "Basic Warranty - Miles": 50000,
-    "Image": 904081990004,
+    "Image": "00904081990004",
     "Details": "Volvo 70 series",
     "Car URL": 210
   },
@@ -4195,7 +4195,7 @@
     "Manufacturer URL": "http://www.volvocars.com/",
     "Basic Warranty - Years": 4,
     "Basic Warranty - Miles": 50000,
-    "Image": 904101990004,
+    "Image": "00904101990004",
     "Details": "Volvo S80",
     "Car URL": 318
   }
